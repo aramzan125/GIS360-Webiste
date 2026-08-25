@@ -1,0 +1,4317 @@
+/* GIS360 brand layer. The existing blue palette remains the primary theme. */
+:root {
+  --gis360-blue: #28007b;
+  --gis360-orange: #fd5900;
+  --gis360-navy: #040d43;
+  --gis360-text: #04000b;
+  --gis360-muted: #666666;
+  --gis360-light: #f3f7fd;
+  --gis360-white: #ffffff;
+  --gis360-primary-blue: #2b4dff;
+  --gis360-border: #e7e7e7;
+  --gis360-top-bar-height: 46px;
+}
+
+/* Keep primary page and section headings in consistent title case. */
+main h1,
+main h2 {
+  text-transform: capitalize;
+}
+
+/* Contact page */
+.gis360-contact-page {
+  background: #fff;
+  overflow: hidden;
+}
+
+.gis360-contact-hero {
+  background:
+    radial-gradient(circle at 82% 22%, rgba(70, 108, 255, 0.28), transparent 25%),
+    linear-gradient(122deg, #061247 0%, #102b8f 55%, #294fff 100%);
+  min-height: 510px;
+  overflow: hidden;
+  padding: clamp(90px, 10vw, 138px) 0;
+  position: relative;
+}
+
+.gis360-contact-hero::before,
+.gis360-contact-hero::after {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+}
+
+.gis360-contact-hero::before {
+  height: 430px;
+  right: -80px;
+  top: -165px;
+  width: 430px;
+}
+
+.gis360-contact-hero::after {
+  bottom: -245px;
+  height: 530px;
+  right: 12%;
+  width: 530px;
+}
+
+.gis360-contact-hero__grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 48px 48px;
+  inset: 0;
+  mask-image: linear-gradient(90deg, transparent, #000 38%, #000);
+  position: absolute;
+}
+
+.gis360-contact-hero__content {
+  max-width: 920px;
+}
+
+.gis360-contact-hero .gis360-section-label,
+.gis360-contact-main .gis360-section-label,
+.gis360-contact-offices .gis360-section-label,
+.gis360-contact-social .gis360-section-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.gis360-contact-hero .gis360-section-label {
+  color: #ff8a4c !important;
+}
+
+.gis360-contact-hero h1 {
+  color: #ff7a32 !important;
+  font-size: clamp(46px, 5vw, 74px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+  margin: 0 0 26px;
+  max-width: 850px;
+}
+
+.gis360-contact-hero h1 span {
+  color: #fff !important;
+}
+
+.gis360-contact-hero__content > p {
+  color: rgba(255, 255, 255, 0.86) !important;
+  font-size: 19px;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 720px;
+}
+
+.gis360-contact-hero__quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.gis360-contact-hero__quick-links a {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 14px;
+  color: #fff !important;
+  display: flex;
+  gap: 13px;
+  min-width: 245px;
+  padding: 13px 18px;
+  transition: 0.3s ease;
+}
+
+.gis360-contact-hero__quick-links a:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #07164d !important;
+  transform: translateY(-3px);
+}
+
+.gis360-contact-hero__quick-links a > i {
+  color: #ff7a32 !important;
+  font-size: 23px;
+  width: 26px;
+}
+
+.gis360-contact-hero__quick-links span {
+  color: inherit !important;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.gis360-contact-hero__quick-links small {
+  color: rgba(255, 255, 255, 0.64) !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gis360-contact-hero__quick-links a:hover small {
+  color: #5c6380 !important;
+}
+
+.gis360-contact-main {
+  background: linear-gradient(180deg, #f5f7fc 0%, #fff 100%);
+}
+
+.gis360-contact-form-card,
+.gis360-contact-direct {
+  border-radius: 24px;
+  height: 100%;
+}
+
+.gis360-contact-form-card {
+  background: #fff;
+  border: 1px solid #e3e8f3;
+  box-shadow: 0 22px 65px rgba(11, 30, 92, 0.09);
+  padding: clamp(30px, 4vw, 54px);
+}
+
+.gis360-contact-heading {
+  margin-bottom: 35px;
+}
+
+.gis360-contact-heading .gis360-section-label,
+.gis360-contact-direct .gis360-section-label,
+.gis360-contact-social .gis360-section-label {
+  color: var(--gis360-orange) !important;
+}
+
+.gis360-contact-heading h2,
+.gis360-contact-direct h2,
+.gis360-contact-social h2 {
+  color: var(--gis360-orange) !important;
+  font-size: clamp(38px, 4vw, 56px);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  margin: 0 0 18px;
+}
+
+.gis360-contact-heading h2 span,
+.gis360-contact-direct h2 span,
+.gis360-contact-social h2 span {
+  color: var(--gis360-blue) !important;
+}
+
+.gis360-contact-heading p,
+.gis360-contact-direct > p,
+.gis360-contact-social__inner > div > p {
+  color: #30384d !important;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.gis360-contact-form label:not(.gis360-contact-consent) {
+  color: #0b1435 !important;
+  display: block;
+  font-size: 14px;
+  font-weight: 750;
+  margin-bottom: 9px;
+}
+
+.gis360-contact-form label > span {
+  color: var(--gis360-orange) !important;
+}
+
+.gis360-contact-form input:not([type="checkbox"]),
+.gis360-contact-form select,
+.gis360-contact-form textarea {
+  background: #f8faff;
+  border: 1px solid #dbe2f0;
+  border-radius: 10px;
+  color: #0a1230 !important;
+  font-size: 15px;
+  min-height: 54px;
+  padding: 13px 16px;
+  transition: 0.25s ease;
+  width: 100%;
+}
+
+.gis360-contact-form textarea {
+  min-height: 138px;
+  resize: vertical;
+}
+
+.gis360-contact-form input::placeholder,
+.gis360-contact-form textarea::placeholder {
+  color: #788097 !important;
+}
+
+.gis360-contact-form input:focus,
+.gis360-contact-form select:focus,
+.gis360-contact-form textarea:focus {
+  background: #fff;
+  border-color: var(--gis360-blue) !important;
+  box-shadow: 0 0 0 4px rgba(42, 73, 239, 0.1) !important;
+  outline: 0;
+}
+
+.gis360-contact-form .is-invalid {
+  border-color: #cf2e2e !important;
+}
+
+.gis360-field-error {
+  color: #b42318 !important;
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.gis360-contact-consent {
+  align-items: flex-start;
+  color: #414a62 !important;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  gap: 10px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.gis360-contact-consent input {
+  accent-color: var(--gis360-orange);
+  align-self: flex-start;
+  flex: 0 0 18px;
+  box-sizing: border-box !important;
+  height: 18px !important;
+  margin: 2px 0 0 !important;
+  max-height: 18px !important;
+  max-width: 18px !important;
+  min-height: 18px !important;
+  min-width: 18px;
+  padding: 0 !important;
+  position: static !important;
+  transform: none !important;
+  width: 18px !important;
+}
+
+.gis360-contact-consent span {
+  color: #414a62 !important;
+  display: block;
+  flex: 1 1 auto;
+  line-height: 1.55;
+  min-width: 0;
+}
+
+.gis360-contact-consent a {
+  color: var(--gis360-blue) !important;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.gis360-contact-form button {
+  border-radius: 9px;
+  min-width: 190px;
+}
+
+.gis360-contact-honeypot {
+  height: 0;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.gis360-contact-alert {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 10px;
+  margin-bottom: 25px;
+  padding: 14px 16px;
+}
+
+.gis360-contact-alert--success {
+  background: #eaf8f0;
+  border: 1px solid #b9e4c9;
+  color: #17663a !important;
+}
+
+.gis360-contact-alert--error {
+  background: #fff0ef;
+  border: 1px solid #f1c2bd;
+  color: #9b241d !important;
+}
+
+.gis360-contact-alert i {
+  color: inherit !important;
+}
+
+.gis360-contact-direct {
+  background:
+    radial-gradient(circle at 100% 0, rgba(68, 104, 255, 0.45), transparent 33%),
+    linear-gradient(145deg, #061349 0%, #102777 100%);
+  box-shadow: 0 22px 65px rgba(6, 19, 73, 0.18);
+  overflow: hidden;
+  padding: clamp(30px, 4vw, 48px);
+  position: relative;
+}
+
+.gis360-contact-direct::after {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  bottom: -150px;
+  content: "";
+  height: 320px;
+  position: absolute;
+  right: -150px;
+  width: 320px;
+}
+
+.gis360-contact-direct h2,
+.gis360-contact-direct h2 span,
+.gis360-contact-direct > p {
+  color: #fff !important;
+  position: relative;
+  z-index: 1;
+}
+
+.gis360-contact-direct > p {
+  color: rgba(255, 255, 255, 0.76) !important;
+}
+
+.gis360-contact-direct__items {
+  display: grid;
+  gap: 12px;
+  margin: 34px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.gis360-contact-direct__items > a {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 13px;
+  color: #fff !important;
+  display: grid;
+  gap: 13px;
+  grid-template-columns: 44px 1fr auto;
+  padding: 14px;
+  transition: 0.3s ease;
+}
+
+.gis360-contact-direct__items > a:hover {
+  background: #fff;
+  color: #07164d !important;
+  transform: translateX(5px);
+}
+
+.gis360-contact-direct__items > a > i:first-child {
+  align-items: center;
+  background: rgba(253, 89, 0, 0.18);
+  border-radius: 50%;
+  color: #ff7935 !important;
+  display: flex;
+  font-size: 18px;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.gis360-contact-direct__items > a > i:last-child {
+  color: #ff7935 !important;
+  font-size: 12px;
+}
+
+.gis360-contact-direct__items span {
+  color: inherit !important;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 750;
+  overflow-wrap: anywhere;
+}
+
+.gis360-contact-direct__items small {
+  color: rgba(255, 255, 255, 0.58) !important;
+  font-size: 10px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.gis360-contact-direct__items > a:hover small {
+  color: #6d748a !important;
+}
+
+.gis360-contact-response {
+  align-items: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  display: flex;
+  gap: 15px;
+  padding-top: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.gis360-contact-response > i {
+  color: #ff7935 !important;
+  font-size: 27px;
+  margin-top: 3px;
+}
+
+.gis360-contact-response strong {
+  color: #fff !important;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.gis360-contact-response p {
+  color: rgba(255, 255, 255, 0.67) !important;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.gis360-contact-offices {
+  background: #fff;
+}
+
+.gis360-contact-offices .gis360-contact-heading {
+  margin: 0 auto 48px;
+  max-width: 800px;
+}
+
+.gis360-contact-office {
+  align-items: stretch;
+  background: #f7f9fd;
+  border: 1px solid #e0e6f1;
+  border-radius: 20px;
+  display: flex;
+  height: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  transition: 0.35s ease;
+}
+
+.gis360-contact-office:hover {
+  border-color: rgba(42, 73, 239, 0.35);
+  box-shadow: 0 20px 50px rgba(17, 39, 105, 0.1);
+  transform: translateY(-6px);
+}
+
+.gis360-contact-office__icon {
+  align-items: center;
+  background: linear-gradient(180deg, #173698 0%, #2b51f2 100%);
+  display: flex;
+  justify-content: center;
+  min-width: 125px;
+  position: relative;
+}
+
+.gis360-contact-office__icon::before {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 50%;
+  content: "";
+  height: 72px;
+  position: absolute;
+  width: 72px;
+}
+
+.gis360-contact-office__icon i {
+  color: #ff7935 !important;
+  font-size: 33px;
+  position: relative;
+}
+
+.gis360-contact-office__body {
+  padding: 35px;
+}
+
+.gis360-contact-office__body > span {
+  color: var(--gis360-orange) !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.gis360-contact-office h3 {
+  color: var(--gis360-blue) !important;
+  font-size: 25px;
+  margin: 7px 0 14px;
+}
+
+.gis360-contact-office address {
+  color: #31394c !important;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.gis360-contact-office__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gis360-contact-office__links a {
+  align-items: center;
+  color: #111a37 !important;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 9px;
+}
+
+.gis360-contact-office__links a:hover {
+  color: var(--gis360-orange) !important;
+}
+
+.gis360-contact-office__links i {
+  color: var(--gis360-orange) !important;
+  width: 15px;
+}
+
+.gis360-contact-office__links a span {
+  color: inherit !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 7px;
+}
+
+.gis360-contact-office__links a small {
+  color: #70788c !important;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  min-width: 46px;
+  text-transform: uppercase;
+}
+
+.gis360-contact-social {
+  background: #f3f5fa;
+  padding: 70px 0;
+}
+
+.gis360-contact-social__inner {
+  align-items: center;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.gis360-contact-social h2 {
+  font-size: clamp(34px, 3.4vw, 48px);
+  margin-bottom: 12px;
+}
+
+.gis360-contact-social__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.gis360-contact-social__links a {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dfe5f0;
+  border-radius: 12px;
+  color: #111a37 !important;
+  display: flex;
+  font-size: 13px;
+  font-weight: 750;
+  gap: 9px;
+  min-height: 52px;
+  padding: 11px 17px;
+  transition: 0.3s ease;
+}
+
+.gis360-contact-social__links a i {
+  color: var(--gis360-blue) !important;
+  font-size: 18px;
+}
+
+.gis360-contact-social__links a:hover {
+  background: var(--gis360-blue);
+  border-color: var(--gis360-blue);
+  color: #fff !important;
+  transform: translateY(-3px);
+}
+
+.gis360-contact-social__links a:hover i {
+  color: var(--gis360-orange) !important;
+}
+
+@media (max-width: 1199px) {
+  .gis360-contact-direct__items > a {
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+  }
+
+  .gis360-contact-social__inner {
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+
+  .gis360-contact-social__links {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 991px) {
+  .gis360-contact-hero {
+    min-height: auto;
+    padding: 90px 0;
+  }
+
+  .gis360-contact-main .row.g-5 {
+    --bs-gutter-y: 30px;
+  }
+
+  .gis360-contact-direct {
+    height: auto;
+  }
+
+  .gis360-contact-office {
+    min-height: 270px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gis360-contact-hero {
+    padding: 72px 0;
+  }
+
+  .gis360-contact-hero h1 {
+    font-size: clamp(39px, 11vw, 54px);
+  }
+
+  .gis360-contact-hero__content > p {
+    font-size: 16px;
+  }
+
+  .gis360-contact-hero__quick-links {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .gis360-contact-hero__quick-links a {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .gis360-contact-form-card,
+  .gis360-contact-direct {
+    border-radius: 18px;
+  }
+
+  .gis360-contact-heading h2,
+  .gis360-contact-direct h2,
+  .gis360-contact-social h2 {
+    font-size: 38px;
+  }
+
+  .gis360-contact-office {
+    flex-direction: column;
+  }
+
+  .gis360-contact-office__icon {
+    min-height: 100px;
+    width: 100%;
+  }
+
+  .gis360-contact-office__body {
+    padding: 27px;
+  }
+
+  .gis360-contact-social {
+    padding: 55px 0;
+  }
+
+  .gis360-contact-social__inner {
+    gap: 30px;
+  }
+
+  .gis360-contact-social__links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+  }
+}
+
+/* Keep the official orange while using accessible dark button text. */
+.btn.btn-theme,
+button.btn-theme {
+  color: #07164d !important;
+  -webkit-text-fill-color: #07164d !important;
+}
+
+.btn.btn-theme:hover,
+.btn.btn-theme:focus-visible,
+button.btn-theme:hover,
+button.btn-theme:focus-visible {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+@media (max-width: 767px) {
+  .banner-area.gis360-home-full-image-hero .fixed-shape-bottom img,
+  .features-area > .fixed-shape img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .gis360-contact-form-card,
+  .gis360-contact-direct {
+    padding: 25px 20px;
+  }
+
+  .gis360-contact-direct__items > a {
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    padding: 11px;
+  }
+
+  .gis360-contact-direct__items > a > i:first-child {
+    height: 40px;
+    width: 40px;
+  }
+
+  .gis360-contact-social__links {
+    grid-template-columns: 1fr;
+  }
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+.gis360-inner-page {
+  padding-top: calc(90px + var(--gis360-top-bar-height));
+}
+
+/* Tanda upper information bar, populated with GIS360 contact details. */
+.top-bar-area.gis360-top-bar {
+  align-items: center;
+  background: var(--gis360-primary-blue) !important;
+  border: 0;
+  display: flex;
+  height: var(--gis360-top-bar-height);
+  left: 0;
+  padding: 0 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.top-bar-area.gis360-top-bar,
+.top-bar-area.gis360-top-bar a,
+.top-bar-area.gis360-top-bar i {
+  color: var(--gis360-white) !important;
+}
+
+.top-bar-area.gis360-top-bar a {
+  margin: 0;
+  text-decoration: none;
+}
+
+.top-bar-area.gis360-top-bar .social .gis360-social-placeholder {
+  background: transparent;
+  border: 0;
+  color: var(--gis360-white) !important;
+  cursor: default;
+  line-height: inherit;
+  padding: 0;
+  -webkit-text-fill-color: var(--gis360-white) !important;
+}
+
+.top-bar-area.gis360-top-bar .social .gis360-social-placeholder:hover,
+.top-bar-area.gis360-top-bar .social .gis360-social-placeholder:focus-visible,
+.top-bar-area.gis360-top-bar .social .gis360-social-placeholder:hover i,
+.top-bar-area.gis360-top-bar .social .gis360-social-placeholder:focus-visible i {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.top-bar-area.gis360-top-bar a:hover,
+.top-bar-area.gis360-top-bar a:focus {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.top-bar-area.gis360-top-bar a:hover i,
+.top-bar-area.gis360-top-bar a:focus i,
+.top-bar-area.gis360-top-bar a:focus-visible i {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.top-bar-area.gis360-top-bar .gis360-top-bar-contact-link:hover > a,
+.top-bar-area.gis360-top-bar .gis360-top-bar-contact-link:hover > i,
+.top-bar-area.gis360-top-bar .gis360-top-bar-contact-link:focus-within > a,
+.top-bar-area.gis360-top-bar .gis360-top-bar-contact-link:focus-within > i {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.top-bar-area.gis360-top-bar ul {
+  margin: 0;
+}
+
+.top-bar-area.gis360-top-bar li {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+.top-bar-area.gis360-top-bar li::after {
+  border-left-color: rgba(255, 255, 255, 0.38);
+}
+
+.top-bar-area.gis360-top-bar .social ul {
+  margin-left: 22px;
+}
+
+.gis360-services-hero {
+  background: var(--gis360-navy);
+  height: clamp(420px, 46vh, 520px);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.gis360-services-hero::after {
+  background: linear-gradient(90deg, rgba(4, 13, 67, 0.18) 0%, transparent 45%, rgba(40, 0, 123, 0.08) 100%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.gis360-services-hero > img {
+  display: block;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  object-position: center 42%;
+  position: absolute;
+  width: 100%;
+}
+
+.gis360-services-network-overlay {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  padding: 10px 24px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.gis360-services-network-overlay .gis360-hero-network {
+  aspect-ratio: 720 / 680;
+  height: 100%;
+  margin: 0;
+  max-width: 520px;
+  width: auto;
+}
+
+.gis360-services-network-overlay .gis360-network-svg--desktop {
+  height: 100%;
+  width: 100%;
+}
+
+/* Keep the template's sticky navigation anchored to the viewport. */
+nav.navbar.validnavs.navbar-sticky {
+  left: 0;
+  position: fixed !important;
+  top: var(--gis360-top-bar-height);
+  width: 100%;
+  z-index: 9999;
+}
+
+/* Official logo treatment */
+.navbar-brand {
+  align-items: center;
+  background: var(--gis360-white);
+  border-radius: 4px;
+  display: flex;
+  overflow: visible;
+  padding: 4px 8px;
+}
+
+.navbar-brand > img.gis360-brand-logo {
+  height: auto;
+  max-height: 58px;
+  transform: scale(1.2);
+  transform-origin: left center;
+  width: 118px;
+}
+
+.collapse-header img.gis360-brand-logo {
+  height: 50px;
+  object-fit: contain;
+  width: 100px;
+}
+
+.side .widget .logo {
+  background: transparent;
+  border-radius: 0;
+  padding: 22px 0 18px;
+}
+
+.side .widget .logo img.gis360-brand-logo {
+  height: auto;
+  width: 176px;
+  filter: none;
+}
+
+.side {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7ff 100%);
+  height: calc(100% - var(--gis360-top-bar-height));
+  top: var(--gis360-top-bar-height);
+}
+
+.bg-dark .side.gis360-contact-panel,
+.side.gis360-contact-panel {
+  background: #f4f7ff !important;
+}
+
+.side.gis360-contact-panel .widget {
+  text-align: center;
+}
+
+.side.gis360-contact-panel .widget .logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.side::after {
+  background: #f4f7ff;
+  border-bottom: 1px solid rgba(43, 77, 255, 0.1);
+  height: 180px;
+}
+
+.side .close-side {
+  border-color: rgba(43, 77, 255, 0.35);
+  color: var(--gis360-primary-blue) !important;
+  -webkit-text-fill-color: var(--gis360-primary-blue) !important;
+}
+
+.side .close-side i {
+  color: var(--gis360-primary-blue) !important;
+  -webkit-text-fill-color: var(--gis360-primary-blue) !important;
+}
+
+.side .widget.address ul {
+  display: grid;
+  gap: 14px;
+}
+
+.side .widget.address ul li.gis360-side-contact {
+  align-items: center;
+  background: #ffffff;
+  border: 2px solid var(--gis360-contact-accent);
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(9, 31, 92, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 15px 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.side .widget.address ul li.gis360-side-contact:hover {
+  box-shadow: 0 14px 30px rgba(9, 31, 92, 0.14);
+  transform: translateY(-2px);
+}
+
+.gis360-side-contact--address {
+  --gis360-contact-accent: #ff5a1f;
+  --gis360-contact-tint: #fff0e9;
+}
+
+.gis360-side-contact--email {
+  --gis360-contact-accent: #3155ff;
+  --gis360-contact-tint: #eaf0ff;
+}
+
+.gis360-side-contact--phone {
+  --gis360-contact-accent: #0797c8;
+  --gis360-contact-tint: #e5f8ff;
+}
+
+.side .gis360-side-contact-icon {
+  align-items: center;
+  background: var(--gis360-contact-tint);
+  border-radius: 50%;
+  color: var(--gis360-contact-accent) !important;
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 30px;
+  height: 80px;
+  justify-content: center;
+  min-width: 80px;
+  width: 80px;
+  -webkit-text-fill-color: var(--gis360-contact-accent) !important;
+}
+
+.side .gis360-side-contact-icon i {
+  color: var(--gis360-contact-accent) !important;
+  -webkit-text-fill-color: var(--gis360-contact-accent) !important;
+}
+
+.side .widget.address .gis360-side-contact .content {
+  min-width: 0;
+  text-align: center;
+}
+
+.side .widget.address .gis360-side-contact .content p {
+  color: var(--gis360-contact-accent) !important;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  margin-bottom: 3px;
+  -webkit-text-fill-color: var(--gis360-contact-accent) !important;
+}
+
+.side .widget.address .gis360-side-contact .content strong,
+.side .widget.address .gis360-side-contact .content a {
+  color: #111827 !important;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  -webkit-text-fill-color: #111827 !important;
+}
+
+.side .widget.address .gis360-side-contact--email .content a {
+  text-transform: lowercase !important;
+}
+
+.side .gis360-side-address-entry + .gis360-side-address-entry {
+  border-top: 1px solid rgba(43, 77, 255, 0.1);
+  margin-top: 9px;
+  padding-top: 9px;
+}
+
+.side .gis360-side-address-entry > span {
+  color: var(--gis360-primary-blue) !important;
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: var(--gis360-primary-blue) !important;
+}
+
+.side .gis360-side-address-entry > strong {
+  display: block;
+}
+
+.side .widget.social .link li a {
+  border: 0;
+  box-shadow: 0 7px 16px rgba(9, 31, 92, 0.18);
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.side .widget.social .link li.facebook a {
+  background: #3155ff;
+}
+
+.side .widget.social .link li.instagram a {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.side .widget.social .link li.twitter a {
+  background: #111827;
+}
+
+.side .widget.social .link li.youtube button {
+  background: #ff0000;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0 7px 16px rgba(9, 31, 92, 0.18);
+  color: #ffffff !important;
+  cursor: default;
+  font-size: 14px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0;
+  width: 45px;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.side .widget.social .link li.youtube button i {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.side .widget.social .link li.linkedin a {
+  background: #0a66c2;
+}
+
+.side.gis360-contact-panel .widget.social .link {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .side.gis360-contact-panel .widget.social .link li {
+  align-items: center;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  margin: 0;
+  width: 45px;
+}
+
+.navbar .side.gis360-contact-panel .widget.social .link li a,
+.navbar .side.gis360-contact-panel .widget.social .link li button {
+  align-items: center;
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  width: 45px;
+}
+
+.navbar .side.gis360-contact-panel .widget.social .link li i {
+  display: block;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Preserve Tanda's original outlined, muted process step numbers. */
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  .work-process-area .work-pro-items .item .icon span {
+  color: transparent !important;
+  opacity: 0.9;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-text-stroke: 2px #f4f4f4;
+}
+
+.work-process-area .work-pro-items .single-item {
+  display: flex;
+}
+
+.work-process-area .work-pro-items .single-item > .item {
+  display: flex;
+  width: 100%;
+}
+
+.work-process-area .work-pro-items .single-item > .item > .item-inner {
+  width: 100%;
+}
+
+footer .f-item.about .gis360-footer-brand-link {
+  display: inline-block;
+}
+
+footer .f-item.about .gis360-footer-brand-link img.gis360-brand-logo {
+  background: transparent;
+  border-radius: 0;
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 1)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.48));
+  height: auto;
+  max-height: none;
+  padding: 0;
+  transition: filter 0.25s ease;
+  width: 175px;
+}
+
+footer.gis360-footer {
+  background: var(--gis360-navy) !important;
+  color: #c2d1e2;
+}
+
+footer.gis360-footer .f-item.about {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
+
+footer.gis360-footer .f-item.about > p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+footer.gis360-footer .fixed-shape img {
+  opacity: 0.1;
+}
+
+footer.gis360-footer .footer-bottom {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+footer.gis360-footer .footer-bottom .link ul {
+  margin: 0;
+}
+
+footer.gis360-footer .footer-bottom .link a {
+  color: #c2d1e2;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+footer.gis360-footer .footer-bottom .link a:hover,
+footer.gis360-footer .footer-bottom .link a:focus {
+  color: var(--gis360-orange);
+}
+
+footer.gis360-footer .gis360-footer-email {
+  max-width: 370px;
+}
+
+footer.gis360-footer .gis360-footer-email input {
+  background: var(--gis360-white);
+  border: 0;
+  box-shadow: 0 10px 28px rgba(4, 13, 67, 0.12);
+  color: #000;
+  font-size: 18px;
+}
+
+footer.gis360-footer .gis360-footer-email input::placeholder {
+  color: #6b7280;
+  opacity: 1;
+}
+
+footer.gis360-footer .gis360-footer-email button {
+  background: var(--gis360-primary-blue) !important;
+  border-color: var(--gis360-primary-blue) !important;
+  color: var(--gis360-white) !important;
+}
+
+footer.gis360-footer .gis360-footer-whatsapp a {
+  align-items: center;
+  display: inline-flex;
+}
+
+footer.gis360-footer .gis360-footer-whatsapp i {
+  color: var(--gis360-white);
+  font-size: 21px;
+  margin-right: 9px;
+}
+
+/* Neutral treatments for retained Tanda technology illustrations. */
+img.gis360-contained-visual {
+  background: linear-gradient(145deg, #f4f7ff 0%, #e8efff 100%);
+  object-fit: contain !important;
+  padding: clamp(18px, 4vw, 48px);
+}
+
+.about-area .thumb img.gis360-home-about-visual {
+  border-radius: 14px;
+  box-shadow: 0 20px 45px rgba(18, 49, 105, 0.13);
+  display: block;
+  height: auto;
+  margin-inline: auto;
+}
+
+.blog-area .blog-items .item .thumb {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(145deg, #f4f7ff 0%, #e8efff 100%);
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-area .blog-items .item .thumb > a {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+
+.blog-area .blog-items .item .thumb img.gis360-contained-visual {
+  box-sizing: border-box;
+  display: block;
+  height: 100% !important;
+  object-fit: contain !important;
+  padding: clamp(16px, 2vw, 28px);
+  width: 100% !important;
+}
+
+.banner-style-five .thumb img {
+  height: auto;
+}
+
+.banner-style-five .thumb img.gis360-home-hero-visual {
+  aspect-ratio: 3 / 2;
+  border: 1px solid rgba(102, 199, 255, 0.28);
+  border-radius: 22px;
+  box-shadow: 0 24px 55px rgba(4, 13, 67, 0.34);
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  object-fit: cover;
+  width: min(100%, 620px);
+}
+
+.banner-area.gis360-home-full-image-hero {
+  background: var(--gis360-navy) !important;
+  height: 80vh;
+  isolation: isolate;
+  min-height: 680px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-area.gis360-home-full-image-hero::before {
+  background:
+    linear-gradient(90deg, rgba(4, 13, 67, 0) 0%, rgba(4, 13, 67, 0) 48%, rgba(4, 13, 67, 0.18) 72%, rgba(4, 13, 67, 0.42) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.76) 10%, rgba(30, 92, 220, 0.46) 28%, rgba(12, 55, 181, 0.66) 52%, rgba(4, 25, 112, 0.82) 100%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.gis360-home-hero-background {
+  display: block;
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.banner-area.gis360-home-full-image-hero .fixed-shape-bottom img {
+  height: auto;
+  width: 100%;
+}
+
+.banner-area.gis360-home-full-image-hero > .item,
+.banner-area.gis360-home-full-image-hero > .fixed-shape-bottom {
+  position: relative;
+  z-index: 2;
+}
+
+/* Lightweight animated service network used in the homepage hero. */
+.gis360-hero-network {
+  margin: 0 auto;
+  max-width: 690px;
+  position: relative;
+  width: 100%;
+}
+
+.gis360-network-svg {
+  display: block;
+  height: auto;
+  overflow: visible;
+  width: 100%;
+}
+
+.gis360-network-svg--mobile,
+.gis360-hero-network-fallback {
+  display: none;
+}
+
+.gis360-network-link {
+  fill: none;
+  opacity: 0.82;
+  stroke: #77c8ff;
+  stroke-dasharray: 9 11;
+  stroke-linecap: round;
+  stroke-width: 2.2;
+}
+
+.gis360-network-signal {
+  fill: var(--gis360-orange);
+  filter: drop-shadow(0 0 5px rgba(253, 89, 0, 0.9));
+}
+
+.gis360-network-core,
+.gis360-network-node {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.gis360-network-core {
+  filter: drop-shadow(0 18px 24px rgba(4, 13, 67, 0.38));
+}
+
+.gis360-network-core-pulse {
+  fill: rgba(43, 77, 255, 0.08);
+  stroke: rgba(102, 199, 255, 0.68);
+  stroke-width: 2;
+}
+
+.gis360-network-logo-backdrop {
+  fill: rgba(4, 13, 67, 0.42);
+  stroke: rgba(102, 199, 255, 0.62);
+  stroke-width: 1.5;
+}
+
+.gis360-network-logo-image {
+  filter: drop-shadow(0 4px 7px rgba(4, 13, 67, 0.55));
+}
+
+.gis360-network-node {
+  cursor: default;
+  outline: none;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.gis360-network-node-halo {
+  fill: rgba(43, 77, 255, 0.12);
+  stroke: rgba(102, 199, 255, 0.26);
+  stroke-width: 1.5;
+}
+
+.gis360-network-node-disc {
+  fill: rgba(4, 13, 67, 0.94);
+  stroke: #66c7ff;
+  stroke-width: 2.5;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.gis360-network-node-icon {
+  color: #66c7ff;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+  transition: color 0.3s ease;
+}
+
+.gis360-network-icon-dot {
+  fill: currentColor;
+  stroke: none;
+}
+
+.gis360-network-node-label {
+  fill: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: rgba(4, 13, 67, 0.94);
+  stroke-linejoin: round;
+  stroke-width: 4px;
+  text-anchor: middle;
+}
+
+.gis360-network-node:hover,
+.gis360-network-node:focus,
+.gis360-network-node.is-active {
+  filter: drop-shadow(0 12px 20px rgba(4, 13, 67, 0.5));
+  transform: scale(1.07);
+}
+
+.gis360-network-node:hover .gis360-network-node-disc,
+.gis360-network-node:focus .gis360-network-node-disc,
+.gis360-network-node.is-active .gis360-network-node-disc {
+  fill: rgba(40, 0, 123, 0.98);
+  stroke: var(--gis360-orange);
+}
+
+.gis360-network-node:hover .gis360-network-node-icon,
+.gis360-network-node:focus .gis360-network-node-icon,
+.gis360-network-node.is-active .gis360-network-node-icon {
+  color: var(--gis360-orange);
+}
+
+/* Higher-contrast network palette for the photographic Services hero. */
+.gis360-services-network-overlay .gis360-network-link {
+  filter: drop-shadow(0 0 5px rgba(0, 24, 110, 0.95));
+  opacity: 0.96;
+  stroke: #c9f2ff;
+  stroke-width: 3;
+}
+
+.gis360-services-network-overlay .gis360-network-signal {
+  fill: #ff6b0b;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 11, 1));
+}
+
+.gis360-services-network-overlay .gis360-network-core {
+  filter: drop-shadow(0 14px 22px rgba(0, 8, 55, 0.82));
+}
+
+.gis360-services-network-overlay .gis360-network-core-pulse {
+  fill: transparent;
+  stroke: #a8e9ff;
+  stroke-width: 3;
+}
+
+.gis360-services-network-overlay .gis360-network-logo-backdrop {
+  fill: transparent;
+  stroke: transparent;
+}
+
+.gis360-services-network-overlay .gis360-network-logo-image {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 35, 0.9));
+}
+
+.gis360-services-network-overlay .gis360-network-node {
+  filter: drop-shadow(0 8px 12px rgba(0, 6, 46, 0.72));
+}
+
+.gis360-services-network-overlay .gis360-network-node-halo {
+  fill: rgba(71, 207, 255, 0.2);
+  stroke: rgba(169, 237, 255, 0.9);
+  stroke-width: 2;
+}
+
+.gis360-services-network-overlay .gis360-network-node-disc {
+  fill: rgba(3, 14, 69, 0.98);
+  stroke: #bcefff;
+  stroke-width: 3;
+}
+
+.gis360-services-network-overlay .gis360-network-node-icon {
+  color: #7de5ff;
+  stroke-width: 2.2;
+}
+
+.gis360-services-network-overlay .gis360-network-node-label {
+  fill: #000000;
+  filter: none;
+  font-weight: 600;
+  paint-order: normal;
+  stroke: none;
+  stroke-width: 0;
+}
+
+.gis360-services-network-overlay .gis360-network-node:hover .gis360-network-node-disc,
+.gis360-services-network-overlay .gis360-network-node:focus .gis360-network-node-disc,
+.gis360-services-network-overlay .gis360-network-node.is-active .gis360-network-node-disc {
+  fill: #123bbf;
+  stroke: #ff6b0b;
+}
+
+.gis360-services-network-overlay .gis360-network-node:hover .gis360-network-node-icon,
+.gis360-services-network-overlay .gis360-network-node:focus .gis360-network-node-icon,
+.gis360-services-network-overlay .gis360-network-node.is-active .gis360-network-node-icon {
+  color: #ff8a3d;
+}
+
+.gis360-hero-network.is-animated .gis360-network-core {
+  animation: gis360NetworkCoreIn 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.gis360-hero-network.is-animated .gis360-network-core-pulse {
+  animation: gis360NetworkCorePulse 3.2s ease-in-out 0.8s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.gis360-hero-network.is-animated .gis360-network-link {
+  animation: gis360NetworkLineIn 1s ease-out both, gis360NetworkLineFlow 5s linear 1s infinite;
+}
+
+.gis360-hero-network.is-animated .gis360-network-node {
+  animation: gis360NetworkNodeIn 0.68s cubic-bezier(0.22, 1, 0.36, 1) var(--network-node-delay) both;
+}
+
+.gis360-hero-network.is-animated .gis360-network-node.is-active .gis360-network-node-halo {
+  animation: gis360NetworkNodePulse 1.8s ease-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes gis360NetworkCoreIn {
+  from { opacity: 0; transform: scale(0.72); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes gis360NetworkCorePulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.92); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+@keyframes gis360NetworkLineIn {
+  from { opacity: 0; stroke-dashoffset: 90; }
+  to { opacity: 0.82; stroke-dashoffset: 0; }
+}
+
+@keyframes gis360NetworkLineFlow {
+  to { stroke-dashoffset: -80; }
+}
+
+@keyframes gis360NetworkNodeIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.72); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes gis360NetworkNodePulse {
+  0% { opacity: 0.8; transform: scale(0.82); }
+  100% { opacity: 0; transform: scale(1.35); }
+}
+
+.gis360-hero-network-fallback {
+  height: min(72vh, 760px);
+  margin: 0 auto;
+  max-width: 100%;
+  object-fit: contain;
+  width: auto;
+}
+
+.banner-area .content h2.gis360-hero-heading,
+.banner-area .content h1.gis360-hero-heading {
+  color: var(--gis360-white);
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 800;
+  letter-spacing: -2.5px;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  text-shadow: 0 18px 46px rgba(4, 13, 67, 0.28);
+}
+
+.gis360-hero-line,
+.gis360-hero-rotator {
+  display: block;
+  white-space: nowrap;
+}
+
+.banner-area .content .gis360-hero-line-blue {
+  color: #1236b8 !important;
+  -webkit-text-fill-color: #1236b8 !important;
+}
+
+.gis360-hero-rotator {
+  color: var(--gis360-orange);
+  font-size: 0.74em;
+  margin-top: 10px;
+  min-height: 1.07em;
+  text-shadow: 0 18px 42px rgba(253, 89, 0, 0.3);
+  transition: opacity 0.24s ease, transform 0.24s ease, filter 0.24s ease;
+}
+
+.gis360-hero-rotator.is-changing {
+  filter: blur(6px);
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.works-about-area .works-about-items .thumb .fun-fact .gis360-static-stat {
+  color: var(--gis360-white);
+  display: inline-block;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.works-about-area .works-about-items .thumb .fun-fact {
+  background: var(--gis360-orange);
+}
+
+.works-about-area .works-about-items .thumb .fun-fact .gis360-static-stat,
+.works-about-area .works-about-items .thumb .fun-fact .medium {
+  color: var(--gis360-white) !important;
+  -webkit-text-fill-color: var(--gis360-white) !important;
+}
+
+.works-about-area .works-about-items .thumb img.gis360-works-image {
+  aspect-ratio: 8 / 7;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.banner-style-five .gis360-hero-contact,
+.banner-style-five .gis360-hero-contact:focus {
+  background: var(--gis360-primary-blue) !important;
+  border-color: var(--gis360-primary-blue) !important;
+  color: var(--gis360-white) !important;
+}
+
+.banner-style-five .gis360-hero-contact:hover {
+  background: var(--gis360-navy) !important;
+  border-color: var(--gis360-navy) !important;
+}
+
+.gis360-technology-backdrop {
+  background:
+    radial-gradient(circle at 22% 25%, rgba(253, 89, 0, 0.22), transparent 24%),
+    radial-gradient(circle at 78% 70%, rgba(43, 77, 255, 0.55), transparent 38%),
+    linear-gradient(135deg, #040d43 0%, #28007b 100%);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Primary actions use GIS360 orange; the surrounding blues remain intact. */
+.btn-theme,
+.btn-theme.border:hover,
+.banner-style-five .btn.btn-light.border {
+  background-color: var(--gis360-orange) !important;
+  border-color: var(--gis360-orange) !important;
+  color: var(--gis360-white) !important;
+}
+
+.btn-theme.border {
+  background: transparent !important;
+  border-color: var(--gis360-orange) !important;
+  color: var(--gis360-orange) !important;
+}
+
+.btn-theme.effect:hover,
+.btn-theme.effect:focus,
+.banner-style-five .btn.btn-light.border:hover {
+  background: var(--gis360-navy) !important;
+  border-color: var(--gis360-navy) !important;
+  color: var(--gis360-white) !important;
+}
+
+/* Small accents and interactive states */
+.site-heading h4,
+.breadcrumb-area .breadcrumb li.active,
+.case-studies-area .owl-nav .owl-prev:hover,
+.case-studies-area .owl-nav .owl-next:hover,
+footer .f-item.link li a:hover,
+.footer-bottom a:hover,
+.btn-standard i,
+.services-area .services-items .item .icon > i {
+  color: var(--gis360-orange);
+}
+
+.site-heading h2::after,
+.site-heading h1::after,
+.standard-services-items .item .info > i,
+.pagination li.page-item.active a,
+.faq-area .faq-content .accordion-item button.accordion-button:not(.collapsed) strong,
+.contact-area form button,
+.contact-area .contact-tabs > ul li button.active::after,
+footer form button {
+  background: var(--gis360-orange);
+  border-color: var(--gis360-orange);
+}
+
+.fun-factor-area .item:nth-child(even) .timer {
+  background: none;
+  color: var(--gis360-orange);
+  -webkit-text-fill-color: var(--gis360-orange);
+}
+
+nav.navbar.validnavs ul.nav > li.active > a,
+nav.navbar.validnavs ul.nav > li > a:hover,
+nav.navbar.validnavs ul.nav li.dropdown ul.dropdown-menu > li > a:hover {
+  color: var(--gis360-orange) !important;
+}
+
+.pagination li.page-item.active a {
+  color: var(--gis360-white);
+}
+
+.form-control:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--gis360-orange) !important;
+  box-shadow: 0 0 0 0.2rem rgba(253, 89, 0, 0.14) !important;
+}
+
+.faq-area .faq-content .accordion-item button.accordion-button:not(.collapsed) {
+  color: var(--gis360-orange);
+}
+
+body:not(#gis360-color-exception):not(#gis360-hover-exception) .faq-area .faq-content .accordion-item button.accordion-button:hover,
+body:not(#gis360-color-exception):not(#gis360-hover-exception) .faq-area .faq-content .accordion-item button.accordion-button:focus,
+body:not(#gis360-color-exception):not(#gis360-hover-exception) .faq-area .faq-content .accordion-item button.accordion-button:focus-visible {
+  background: transparent !important;
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.contact-area .contact-tabs > ul li button.active,
+.contact-tabs .tab-content ul li i,
+.case-studies-area .item .info a:hover {
+  color: var(--gis360-orange);
+}
+
+.tanda-preloader .animation-preloader::after {
+  background-image: url('../brand/favicon/favicon-192.png');
+}
+
+.tanda-preloader .animation-preloader .spinner {
+  border-top-color: var(--gis360-orange);
+}
+
+.tanda-preloader .animation-preloader .txt-loading .letters-loading::before {
+  color: var(--gis360-blue);
+}
+
+@media (max-width: 1023px) {
+  .navbar-brand {
+    padding: 3px 6px;
+  }
+
+  .navbar-brand > img.gis360-brand-logo {
+    max-height: 50px;
+    transform: scale(1.12);
+    width: 100px;
+  }
+}
+
+/* Phase 6 content-migration components */
+.gis360-service-card,
+.gis360-content-card,
+.gis360-office-card,
+.gis360-contact-panel {
+  background: #fff;
+  border: 1px solid var(--gis360-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 35px rgba(4, 13, 67, 0.07);
+}
+
+.gis360-content-card,
+.gis360-office-card,
+.gis360-contact-panel {
+  height: 100%;
+  padding: clamp(24px, 3vw, 38px);
+}
+
+.services-area .services-items > .row {
+  row-gap: 30px;
+}
+
+.services-area .services-items .single-item {
+  display: flex;
+}
+
+.services-area .services-items .item.gis360-service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 42px 30px 32px;
+  width: 100%;
+}
+
+.services-area .services-items .item.gis360-service-card::after {
+  background: var(--bg-gradient);
+  border-radius: inherit;
+  display: block;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(100%);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 0;
+}
+
+.services-area .services-items .item.gis360-service-card:hover::after,
+.services-area .services-items .item.gis360-service-card:focus-within::after {
+  height: 100%;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-area .services-items .item.gis360-service-card > .icon,
+.services-area .services-items .item.gis360-service-card > .info {
+  position: relative;
+  z-index: 1;
+}
+
+.services-area .services-items .item.gis360-service-card:hover,
+.services-area .services-items .item.gis360-service-card:focus-within {
+  box-shadow: 0 18px 42px rgba(4, 13, 67, 0.13);
+  transform: translateY(-4px);
+}
+
+.services-area .services-items .item.gis360-service-card:hover h4 a,
+.services-area .services-items .item.gis360-service-card:focus-within h4 a {
+  color: var(--gis360-white) !important;
+}
+
+.services-area .services-items .item.gis360-service-card:hover p,
+.services-area .services-items .item.gis360-service-card:hover .gis360-service-points li,
+.services-area .services-items .item.gis360-service-card:focus-within p,
+.services-area .services-items .item.gis360-service-card:focus-within .gis360-service-points li {
+  color: var(--gis360-white) !important;
+}
+
+.services-area .services-items .item.gis360-service-card:hover .icon > i,
+.services-area .services-items .item.gis360-service-card:focus-within .icon > i {
+  color: var(--gis360-white) !important;
+}
+
+.services-area .services-items .item.gis360-service-card .icon > i {
+  margin-bottom: 28px;
+}
+
+.gis360-home-services .gis360-service-card .icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.services-area.gis360-home-services .services-items .item.gis360-service-card .icon > i {
+  font-size: 82px;
+}
+
+.services-area.gis360-services-page .services-items .item.gis360-service-card {
+  height: 650px;
+}
+
+.gis360-services-page .gis360-service-card .icon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.services-area.gis360-services-page .services-items .item.gis360-service-card .icon > i {
+  font-size: 82px;
+}
+
+.gis360-services-page .gis360-service-card .info > h4 {
+  text-align: center;
+}
+
+.services-area.gis360-services-page .services-items .item.gis360-service-card .info > a.btn-standard {
+  align-self: center;
+}
+
+/* Use black website text while preserving the footer's dedicated palette. */
+body {
+  color: #000;
+}
+
+body:not(#gis360-color-exception) :where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  li,
+  span,
+  strong,
+  em,
+  small,
+  label,
+  button,
+  input,
+  textarea,
+  select,
+  option,
+  th,
+  td,
+  dt,
+  dd,
+  blockquote,
+  figcaption,
+  legend,
+  time
+):not(.gis360-footer *):not(.text-light):not(.text-light *):not(.gis360-contact-panel *):not(.gis360-contact-page *):not(.gis360-careers-page *):not(.gis360-process-flow *):not(.gis360-job-head *):not(.gis360-legal-page *):not(.gis360-support-page *):not(.gis360-cookie-modal *):not(.gis360-about-principle *):not(.gis360-about-process__number):not(.btn):not(.btn *):not(.btn-standard):not(.btn-standard *):not(.gis360-section-label):not(.gis360-coverage-accent):not(.gis360-coverage-blue):not(.gis360-display-accent):not(.gis360-display-blue):not(.gis360-map-marker > span) {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* Phase 7: legal, privacy and customer-support pages. */
+.gis360-page-intro {
+  background:
+    radial-gradient(circle at 88% 20%, rgba(253, 89, 0, 0.12), transparent 24%),
+    linear-gradient(135deg, #f7f9ff 0%, #e9efff 100%);
+  border-bottom: 1px solid rgba(43, 77, 255, 0.12);
+  padding: 72px 0 78px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gis360-page-intro::after {
+  background: linear-gradient(90deg, var(--gis360-primary-blue), var(--gis360-orange));
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.gis360-breadcrumb {
+  align-items: center;
+  color: #475569;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 9px;
+  margin-bottom: 24px;
+}
+
+.gis360-breadcrumb a { color: var(--gis360-primary-blue); font-weight: 700; }
+.gis360-page-kicker,
+.gis360-section-label {
+  color: var(--gis360-orange);
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.gis360-page-intro h1 {
+  color: var(--gis360-primary-blue);
+  font-size: clamp(46px, 6vw, 76px);
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.gis360-page-intro h1 span { color: var(--gis360-orange); }
+.gis360-page-intro p { color: #334155; font-size: 19px; margin: 0; max-width: 720px; }
+
+.gis360-legal-container {
+  align-items: start;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 250px minmax(0, 1fr);
+  padding-bottom: 100px;
+  padding-top: 80px;
+}
+
+.gis360-legal-container--single { display: block; max-width: 1040px; }
+.gis360-legal-toc {
+  background: #f4f7ff;
+  border: 1px solid rgba(43, 77, 255, 0.12);
+  border-radius: 16px;
+  padding: 24px;
+  position: sticky;
+  top: calc(120px + var(--gis360-top-bar-height));
+}
+
+.gis360-legal-toc > strong { color: #0b1f5e; display: block; font-size: 17px; margin-bottom: 14px; }
+.gis360-legal-toc ol { margin: 0; padding-left: 20px; }
+.gis360-legal-toc li { color: #64748b; font-size: 14px; margin: 8px 0; }
+.gis360-legal-toc a { color: #334155; }
+.gis360-legal-toc a:hover { color: var(--gis360-orange); }
+
+.gis360-legal-content {
+  background: #fff;
+  border: 1px solid #e5eaf5;
+  border-radius: 20px;
+  box-shadow: 0 20px 55px rgba(9, 31, 92, 0.08);
+  color: #1f2937;
+  padding: clamp(28px, 5vw, 64px);
+}
+
+.gis360-legal-content > p { font-size: 17px; line-height: 1.8; }
+.gis360-legal-content section { border-top: 1px solid #edf0f7; margin-top: 34px; padding-top: 34px; scroll-margin-top: 150px; }
+.gis360-legal-content h2 { color: #0b2a85; font-size: 29px; letter-spacing: -0.6px; margin-bottom: 16px; }
+.gis360-legal-content h3 { color: #183da9; font-size: 20px; margin: 26px 0 10px; }
+.gis360-legal-content p,
+.gis360-legal-content li,
+.gis360-legal-content address { color: #374151; font-size: 16px; line-height: 1.75; }
+.gis360-legal-content ul { margin-bottom: 20px; padding-left: 22px; }
+.gis360-legal-content li { margin: 6px 0; }
+.gis360-legal-content a,
+.gis360-inline-button { color: var(--gis360-primary-blue); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.gis360-inline-button { background: none; border: 0; padding: 0; }
+.gis360-inline-button:hover { color: var(--gis360-orange); }
+.gis360-last-updated { background: #fff4ee; border-left: 4px solid var(--gis360-orange); border-radius: 8px; padding: 13px 16px; }
+
+.gis360-support-intro h2,
+.gis360-support-page .site-heading h2,
+.gis360-support-page .gis360-content-card h2,
+.gis360-support-page section h2 { color: #0b2a85; }
+.gis360-support-intro h2 { font-size: clamp(38px, 4vw, 56px); letter-spacing: -2px; line-height: 1.08; }
+.gis360-support-intro p { color: #374151; font-size: 17px; line-height: 1.75; }
+.gis360-support-contact-card {
+  background: linear-gradient(145deg, #0b2a85, #2b4dff);
+  border-radius: 20px;
+  box-shadow: 0 22px 50px rgba(19, 52, 157, 0.24);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 35px;
+  padding: 40px;
+  text-align: center;
+}
+.gis360-support-contact-card > i { color: var(--gis360-orange); font-size: 66px; }
+.gis360-support-contact-card h3,
+.gis360-support-contact-card a:not(.btn) { color: #fff; }
+.gis360-support-contact-card h3 { font-size: 28px; margin: 0; }
+.gis360-support-contact-card a:not(.btn) { font-size: 17px; font-weight: 700; }
+
+.gis360-support-options .row > div { display: flex; margin-bottom: 30px; }
+.gis360-support-option {
+  background: #fff;
+  border: 1px solid #e2e8f4;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(9, 31, 92, 0.07);
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
+}
+.gis360-support-option:hover { box-shadow: 0 20px 44px rgba(9, 31, 92, 0.14); transform: translateY(-5px); }
+.gis360-support-option__icon { align-items: center; background: #eaf0ff; border-radius: 50%; color: var(--gis360-primary-blue); display: flex; font-size: 34px; height: 72px; justify-content: center; margin-bottom: 22px; width: 72px; }
+.gis360-support-option h3 { color: #0b1f5e; font-size: 25px; }
+.gis360-support-option ul { flex: 1; list-style: none; margin: 8px 0 24px; padding: 0; }
+.gis360-support-option li { color: #374151; display: flex; gap: 10px; margin: 9px 0; }
+.gis360-support-option li i { color: var(--gis360-orange); margin-top: 5px; }
+.gis360-support-option .btn-standard { align-self: flex-start; color: var(--gis360-primary-blue); }
+
+.gis360-support-notice { align-items: center; background: #08194d; border-radius: 22px; color: #fff; display: grid; gap: 30px; grid-template-columns: 120px 1fr; padding: 42px; }
+.gis360-support-notice__icon { align-items: center; background: var(--gis360-orange); border-radius: 50%; display: flex; font-size: 42px; height: 100px; justify-content: center; width: 100px; }
+.gis360-support-notice h2,
+.gis360-support-notice p { color: #fff !important; }
+.gis360-support-notice p { margin-bottom: 8px; }
+.gis360-content-card { background: #fff; border: 1px solid #e5eaf5; border-radius: 18px; box-shadow: 0 14px 36px rgba(9, 31, 92, 0.07); height: 100%; padding: 34px; }
+.gis360-support-guidance .row > div { margin-bottom: 24px; }
+.gis360-support-check-grid { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+.gis360-support-check-grid li { margin: 8px 0; }
+.gis360-support-muted,
+.gis360-support-disclaimer { color: #64748b; font-size: 14px; }
+.gis360-priority { border-left: 4px solid; margin-top: 18px; padding: 4px 0 4px 16px; }
+.gis360-priority strong { color: #0b1f5e; }
+.gis360-priority p { font-size: 14px; margin: 3px 0 0; }
+.gis360-priority--critical { border-color: #dc2626; }
+.gis360-priority--high { border-color: var(--gis360-orange); }
+.gis360-priority--normal { border-color: var(--gis360-primary-blue); }
+.gis360-support-disclaimer { margin: 0 auto; max-width: 900px; text-align: center; }
+.gis360-field-dispatch-visual { align-items: center; background: linear-gradient(145deg, #eef2ff, #dce6ff); border-radius: 24px; color: var(--gis360-primary-blue); display: flex; flex-direction: column; font-size: 18px; font-weight: 800; gap: 18px; justify-content: center; min-height: 390px; }
+.gis360-field-dispatch-visual i { color: var(--gis360-orange); font-size: 120px; }
+.gis360-support-existing { background: #071642; color: #fff; }
+.gis360-support-existing h2,
+.gis360-support-existing p { color: #fff !important; }
+.gis360-support-links { display: flex; flex-wrap: wrap; gap: 12px; }
+.gis360-support-links a { border: 1px solid rgba(255,255,255,.25); border-radius: 50px; color: #fff; padding: 8px 15px; }
+.gis360-support-links a:hover { background: var(--gis360-orange); border-color: var(--gis360-orange); }
+
+.gis360-footer-secondary-links { margin-top: 8px !important; }
+.gis360-footer-secondary-links li { font-size: 12px; margin-left: 15px !important; }
+.gis360-footer-secondary-links a,
+.gis360-footer-secondary-links button { color: rgba(255,255,255,.7) !important; font-size: 12px; }
+.gis360-footer-secondary-links button { background: none; border: 0; padding: 0; }
+.gis360-footer-secondary-links a:hover,
+.gis360-footer-secondary-links button:hover { color: var(--gis360-orange) !important; }
+
+.gis360-cookie-modal[hidden] { display: none; }
+.gis360-cookie-banner[hidden] { display: none; }
+.gis360-cookie-banner { align-items: center; background: #fff; border: 1px solid #dbe3f0; border-radius: 18px; bottom: 20px; box-shadow: 0 22px 60px rgba(3, 11, 38, .24); display: flex; gap: 28px; justify-content: space-between; left: 50%; max-width: 1120px; padding: 20px 24px; position: fixed; transform: translateX(-50%); width: calc(100% - 32px); z-index: 10990; }
+.gis360-cookie-banner strong { color: #0b2a85; display: block; font-size: 18px; margin-bottom: 3px; }
+.gis360-cookie-banner p { color: #475569; font-size: 14px; line-height: 1.55; margin: 0; }
+.gis360-cookie-banner__actions { align-items: center; display: flex; flex: 0 0 auto; gap: 10px; }
+.gis360-cookie-banner__actions .gis360-cookie-preferences-trigger { background: transparent; border: 0; color: var(--gis360-primary-blue); font-weight: 700; min-height: 44px; padding: 8px 10px; }
+.gis360-cookie-modal { inset: 0; position: fixed; z-index: 11000; }
+.gis360-cookie-modal__backdrop { background: rgba(3, 11, 38, 0.72); inset: 0; position: absolute; }
+.gis360-cookie-modal__dialog { background: #fff; border-radius: 20px; box-shadow: 0 30px 80px rgba(0,0,0,.28); left: 50%; max-height: calc(100vh - 40px); max-width: 610px; overflow-y: auto; padding: 38px; position: absolute; top: 50%; transform: translate(-50%, -50%); width: calc(100% - 32px); }
+.gis360-cookie-modal__close { background: #eef2ff; border: 0; border-radius: 50%; color: var(--gis360-primary-blue); height: 38px; position: absolute; right: 20px; top: 20px; width: 38px; }
+.gis360-cookie-modal__eyebrow { color: var(--gis360-orange); font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.gis360-cookie-modal h2 { color: #0b2a85; font-size: 34px; margin: 8px 0 12px; }
+.gis360-cookie-modal p { color: #475569; }
+.gis360-cookie-choice { align-items: center; background: #f7f9ff; border: 1px solid #e3e9f7; border-radius: 12px; display: flex; gap: 20px; justify-content: space-between; margin-top: 14px; padding: 18px; }
+.gis360-cookie-choice strong,
+.gis360-cookie-choice span { display: block; }
+.gis360-cookie-choice strong { color: #0b1f5e; }
+.gis360-cookie-choice span { color: #64748b; font-size: 13px; }
+.gis360-cookie-status { color: var(--gis360-primary-blue) !important; font-weight: 800; white-space: nowrap; }
+.gis360-cookie-choice input { accent-color: var(--gis360-primary-blue); height: 24px; width: 24px; }
+.gis360-cookie-modal__actions { align-items: center; display: flex; gap: 18px; justify-content: space-between; margin-top: 24px; }
+.gis360-cookie-modal__actions > div { display: flex; gap: 10px; }
+.gis360-cookie-modal__actions > a { color: var(--gis360-primary-blue); font-weight: 700; }
+.gis360-cookie-modal-open { overflow: hidden; }
+
+@media (max-width: 991px) {
+  .gis360-legal-container { grid-template-columns: 1fr; }
+  .gis360-legal-toc { position: static; }
+  .gis360-support-contact-card { margin: 35px 0 0; }
+}
+
+@media (max-width: 767px) {
+  .gis360-page-intro { padding: 48px 0 54px; }
+  .gis360-page-intro h1 { font-size: 44px; letter-spacing: -2px; }
+  .gis360-page-intro p { font-size: 16px; }
+  .gis360-legal-container { gap: 24px; padding-bottom: 65px; padding-top: 45px; }
+  .gis360-legal-content { border-radius: 14px; padding: 24px 20px; }
+  .gis360-legal-content h2 { font-size: 24px; }
+  .gis360-support-contact-card,
+  .gis360-support-option,
+  .gis360-content-card { padding: 26px 22px; }
+  .gis360-support-notice { grid-template-columns: 1fr; padding: 28px 22px; text-align: center; }
+  .gis360-support-notice__icon { margin: 0 auto; }
+  .gis360-support-check-grid { grid-template-columns: 1fr; gap: 0; }
+  .gis360-field-dispatch-visual { margin-bottom: 35px; min-height: 280px; }
+  .gis360-footer-secondary-links li { margin-left: 8px !important; }
+  .gis360-cookie-modal__dialog { padding: 32px 22px 24px; }
+  .gis360-cookie-banner { align-items: stretch; bottom: 10px; flex-direction: column; gap: 14px; padding: 18px; }
+  .gis360-cookie-banner__actions { align-items: stretch; flex-direction: column; }
+  .gis360-cookie-banner__actions .btn,
+  .gis360-cookie-banner__actions .gis360-cookie-preferences-trigger { width: 100%; }
+  .gis360-cookie-choice,
+  .gis360-cookie-modal__actions { align-items: stretch; flex-direction: column; }
+  .gis360-cookie-modal__actions > div { align-items: stretch; flex-direction: column; width: 100%; }
+  .gis360-cookie-modal__actions .btn { width: 100%; }
+}
+
+/* Temporary charcoal footer preview inspired by the supplied reference. */
+.gis360-footer.gis360-footer--charcoal-preview {
+  background-color: #242424 !important;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.025) 1px, transparent 1.2px) !important;
+  background-size: 4px 4px !important;
+}
+
+.gis360-footer--charcoal-preview .fixed-shape {
+  display: none;
+}
+
+.gis360-footer--charcoal-preview .f-item.about {
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+
+.gis360-footer--charcoal-preview .gis360-footer-brand-link img.gis360-brand-logo {
+  filter: brightness(0) invert(1) grayscale(1) !important;
+}
+
+.gis360-footer--charcoal-preview .gis360-footer-brand-link:hover img.gis360-brand-logo,
+.gis360-footer--charcoal-preview .gis360-footer-brand-link:focus-visible img.gis360-brand-logo {
+  filter: none !important;
+}
+
+.gis360-footer--charcoal-preview h4,
+.gis360-footer--charcoal-preview h5,
+.gis360-footer--charcoal-preview strong {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gis360-footer--charcoal-preview p,
+.gis360-footer--charcoal-preview .f-item a,
+.gis360-footer--charcoal-preview .address li,
+.gis360-footer--charcoal-preview .footer-bottom p {
+  color: #bdbdbd !important;
+  -webkit-text-fill-color: #bdbdbd !important;
+}
+
+.gis360-footer--charcoal-preview .f-item a:hover,
+.gis360-footer--charcoal-preview .footer-bottom a:hover,
+.gis360-footer--charcoal-preview .footer-bottom button:hover {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.gis360-footer--charcoal-preview .f-item a:hover i,
+.gis360-footer--charcoal-preview .f-item a:focus-visible i,
+.gis360-footer--charcoal-preview .footer-bottom a:hover i,
+.gis360-footer--charcoal-preview .footer-bottom a:focus-visible i {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.gis360-footer--charcoal-preview .footer-bottom {
+  background: #242424 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.gis360-footer-associations {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 30px 0;
+}
+
+.gis360-footer-associations__intro {
+  margin: 0 auto 30px;
+  max-width: 920px;
+}
+
+.gis360-footer-associations__intro h2 {
+  color: #ffffff !important;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gis360-footer-associations__intro p {
+  color: #bdbdbd !important;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  -webkit-text-fill-color: #bdbdbd !important;
+}
+
+.gis360-footer-associations__row {
+  align-items: center;
+  display: grid;
+  gap: 28px 24px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  transform: translateY(14px);
+}
+
+.gis360-footer-associations__row a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 58px;
+  opacity: 0.72;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.gis360-footer-associations__row a:hover,
+.gis360-footer-associations__row a:focus-visible {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.gis360-footer-associations__row img {
+  filter: grayscale(1) brightness(0) invert(1);
+  height: auto;
+  max-height: 50px;
+  max-width: 170px;
+  object-fit: contain;
+  transition: filter 0.25s ease;
+  width: 100%;
+}
+
+.gis360-footer-associations__row a:hover img,
+.gis360-footer-associations__row a:focus-visible img {
+  filter: none;
+}
+
+.gis360-footer-associations__row a:nth-child(1) img,
+.gis360-footer-associations__row a:nth-child(5) img {
+  max-width: 190px;
+}
+
+.gis360-footer-associations__row a:nth-child(5) img {
+  filter: grayscale(1) brightness(1.75) contrast(0.82);
+}
+
+.gis360-footer-associations__row a:nth-child(5):hover img,
+.gis360-footer-associations__row a:nth-child(5):focus-visible img {
+  filter: none;
+}
+
+.gis360-footer-associations__row a:nth-child(6) img {
+  max-height: 58px;
+  max-width: 135px;
+}
+
+.gis360-footer-associations__row a:nth-child(7) img {
+  filter: grayscale(1) brightness(1.75) contrast(0.82);
+  max-height: 66px;
+  max-width: 100px;
+}
+
+.gis360-footer-associations__row a:nth-child(7):hover img,
+.gis360-footer-associations__row a:nth-child(7):focus-visible img {
+  filter: none;
+}
+
+@media (max-width: 991px) {
+  .gis360-footer-associations__row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .gis360-footer-associations {
+    padding: 26px 0;
+  }
+
+  .gis360-footer-associations__intro {
+    margin-bottom: 26px;
+  }
+
+  .gis360-footer-associations__intro h2 {
+    font-size: 27px;
+  }
+
+  .gis360-footer-associations__row {
+    gap: 24px 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gis360-footer-associations__row img,
+  .gis360-footer-associations__row a:nth-child(1) img,
+  .gis360-footer-associations__row a:nth-child(5) img {
+    max-width: 145px;
+  }
+}
+
+/* About GIS360 */
+.gis360-about-page {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.gis360-about-page p {
+  color: #101828;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+body:not(#gis360-color-exception) .gis360-about-page .gis360-section-label {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.gis360-about-hero {
+  background:
+    radial-gradient(circle at 88% 18%, rgba(253, 89, 0, 0.14), transparent 25%),
+    radial-gradient(circle at 6% 88%, rgba(43, 77, 255, 0.13), transparent 28%),
+    linear-gradient(135deg, #f8faff 0%, #eef3ff 100%);
+  border-bottom: 1px solid rgba(43, 77, 255, 0.12);
+  padding: clamp(80px, 9vw, 125px) 0;
+  position: relative;
+}
+
+.gis360-about-hero::after {
+  background: linear-gradient(90deg, var(--gis360-primary-blue), var(--gis360-orange));
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.gis360-about-hero h1 {
+  margin-bottom: 32px;
+}
+
+.gis360-about-hero h1 span {
+  display: block;
+}
+
+.gis360-about-hero__copy {
+  max-width: 760px;
+}
+
+.gis360-about-hero__copy p {
+  font-size: 17px;
+  margin-bottom: 16px;
+}
+
+.gis360-about-hero__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.gis360-about-principles {
+  background: linear-gradient(145deg, #071b5a 0%, #102f91 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  box-shadow: 0 28px 65px rgba(11, 31, 94, 0.22);
+  margin-left: 42px;
+  overflow: hidden;
+  padding: 18px;
+}
+
+.gis360-about-principle {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 15px;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  gap: 17px;
+  min-height: 92px;
+  padding: 22px 24px;
+}
+
+.gis360-about-principle + .gis360-about-principle {
+  margin-top: 14px;
+}
+
+body:not(#gis360-color-exception) .gis360-about-page .gis360-about-principle span {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gis360-about-principle i {
+  align-items: center;
+  background: var(--gis360-orange);
+  border-radius: 50%;
+  display: inline-flex;
+  flex: 0 0 48px;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+}
+
+.gis360-about-section {
+  padding: clamp(85px, 9vw, 125px) 0;
+}
+
+.gis360-about-heading {
+  font-size: clamp(38px, 4.2vw, 58px) !important;
+  margin-bottom: 28px;
+}
+
+.gis360-about-who p {
+  margin-bottom: 16px;
+}
+
+.gis360-capability-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-left: 42px;
+}
+
+.gis360-capability-item {
+  align-items: center;
+  background: #f5f7ff;
+  border: 1px solid rgba(43, 77, 255, 0.12);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  min-height: 158px;
+  padding: 23px 16px;
+  text-align: center;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.gis360-capability-item:hover {
+  border-color: var(--gis360-primary-blue);
+  box-shadow: 0 18px 38px rgba(43, 77, 255, 0.12);
+  transform: translateY(-5px);
+}
+
+.gis360-capability-item i {
+  color: var(--gis360-orange);
+  font-size: 34px;
+}
+
+.gis360-capability-item span {
+  color: #101828;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.gis360-about-approach {
+  background: #f7f9fd;
+}
+
+.gis360-about-section-heading {
+  margin: 0 auto clamp(48px, 6vw, 72px);
+  max-width: 980px;
+}
+
+.gis360-about-section-heading .gis360-about-heading {
+  margin-bottom: 24px;
+}
+
+.gis360-about-section-heading > p {
+  font-size: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 920px;
+}
+
+.gis360-about-process {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  position: relative;
+}
+
+.gis360-about-process::before {
+  background: linear-gradient(90deg, var(--gis360-primary-blue), var(--gis360-orange));
+  content: "";
+  height: 3px;
+  left: 8%;
+  position: absolute;
+  right: 8%;
+  top: 47px;
+}
+
+.gis360-about-process__step {
+  background: #ffffff;
+  border: 1px solid rgba(43, 77, 255, 0.12);
+  border-radius: 18px;
+  min-height: 245px;
+  padding: 28px 22px 24px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.gis360-about-process__number {
+  align-items: center;
+  background: var(--gis360-primary-blue);
+  border: 5px solid #f7f9fd;
+  border-radius: 50%;
+  color: #ffffff;
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 800;
+  height: 52px;
+  justify-content: center;
+  margin-bottom: 22px;
+  width: 52px;
+}
+
+body:not(#gis360-color-exception) .gis360-about-page .gis360-about-process__number {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gis360-about-process__step:nth-child(even) .gis360-about-process__number {
+  background: var(--gis360-orange);
+}
+
+.gis360-about-process__step h3 {
+  color: #0b1f5e;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.gis360-about-process__step p {
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.gis360-about-approach__closing {
+  font-size: 17px !important;
+  margin: 40px auto 0;
+  max-width: 980px;
+}
+
+.gis360-about-global {
+  background:
+    radial-gradient(circle at 14% 50%, rgba(60, 142, 255, 0.28), transparent 30%),
+    linear-gradient(135deg, #06164f 0%, #0d2b83 60%, #1538a1 100%);
+  padding: clamp(85px, 9vw, 125px) 0;
+}
+
+.gis360-about-global h2,
+.gis360-about-global h2 span,
+.gis360-about-cta h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gis360-about-global h2 {
+  font-size: clamp(42px, 5vw, 68px);
+  letter-spacing: -2.4px;
+  line-height: 1.05;
+  margin-bottom: 28px;
+}
+
+.gis360-about-global h2 span {
+  color: #ff8a47 !important;
+  -webkit-text-fill-color: #ff8a47 !important;
+}
+
+.gis360-about-global p,
+.gis360-about-cta p {
+  color: rgba(255, 255, 255, 0.88) !important;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.gis360-about-global__visual {
+  align-items: center;
+  display: flex;
+  height: 390px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.gis360-about-global__visual > i {
+  color: #ffffff;
+  font-size: 155px;
+  position: relative;
+  z-index: 2;
+}
+
+.gis360-about-global__orbit {
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  height: 285px;
+  position: absolute;
+  width: 285px;
+}
+
+.gis360-about-global__orbit--two {
+  border-color: rgba(253, 89, 0, 0.65);
+  height: 350px;
+  transform: rotate(55deg) scaleY(0.56);
+  width: 350px;
+}
+
+.gis360-about-global__dot {
+  background: var(--gis360-orange);
+  border: 5px solid rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(253, 89, 0, 0.15);
+  height: 22px;
+  position: absolute;
+  width: 22px;
+  z-index: 3;
+}
+
+.gis360-about-global__dot--one { left: 16%; top: 27%; }
+.gis360-about-global__dot--two { bottom: 23%; right: 13%; }
+.gis360-about-global__dot--three { right: 23%; top: 14%; }
+
+.gis360-about-card-row {
+  row-gap: 28px;
+}
+
+.gis360-about-service-model {
+  background: #ffffff;
+  border: 1px solid rgba(43, 77, 255, 0.13);
+  border-radius: 20px;
+  box-shadow: 0 16px 42px rgba(15, 40, 100, 0.08);
+  height: 100%;
+  min-height: 330px;
+  padding: 38px 28px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.gis360-about-service-model:hover {
+  border-color: var(--gis360-orange);
+  transform: translateY(-6px);
+}
+
+.gis360-about-service-model > i {
+  align-items: center;
+  background: #eef3ff;
+  border-radius: 16px;
+  color: var(--gis360-primary-blue);
+  display: inline-flex;
+  font-size: 32px;
+  height: 72px;
+  justify-content: center;
+  margin-bottom: 28px;
+  width: 72px;
+}
+
+.gis360-about-service-model h3 {
+  color: #0b1f5e;
+  font-size: 22px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.gis360-about-service-model p {
+  margin: 0;
+}
+
+.gis360-about-why {
+  background: linear-gradient(180deg, #f5f8ff 0%, #eef3ff 100%);
+}
+
+.gis360-about-why-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gis360-about-reason {
+  align-items: flex-start;
+  background: #ffffff;
+  border: 1px solid rgba(43, 77, 255, 0.12);
+  border-radius: 18px;
+  display: flex;
+  gap: 22px;
+  min-height: 180px;
+  padding: 30px;
+}
+
+.gis360-about-reason__icon {
+  align-items: center;
+  background: var(--gis360-primary-blue);
+  border-radius: 14px;
+  color: #ffffff;
+  display: flex;
+  flex: 0 0 60px;
+  font-size: 24px;
+  height: 60px;
+  justify-content: center;
+}
+
+.gis360-about-reason:nth-child(even) .gis360-about-reason__icon {
+  background: var(--gis360-orange);
+}
+
+.gis360-about-reason h3 {
+  color: #0b1f5e;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.gis360-about-reason p {
+  margin: 0;
+}
+
+.gis360-about-commitment {
+  background: #fffaf7;
+  padding: clamp(80px, 8vw, 110px) 0;
+}
+
+.gis360-about-commitment__inner {
+  align-items: start;
+  background: #ffffff;
+  border: 1px solid rgba(253, 89, 0, 0.2);
+  border-left: 7px solid var(--gis360-orange);
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(74, 58, 46, 0.08);
+  display: grid;
+  gap: 58px;
+  grid-template-columns: 0.9fr 1.1fr;
+  padding: clamp(38px, 5vw, 68px);
+}
+
+.gis360-about-commitment__inner .gis360-about-heading {
+  margin: 0;
+}
+
+.gis360-about-commitment__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.gis360-about-memberships {
+  background: #ffffff;
+}
+
+.gis360-about-logo-grid {
+  align-items: stretch;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.gis360-about-logo-grid a {
+  align-items: center;
+  background: #f8f9fc;
+  border: 1px solid rgba(43, 77, 255, 0.12);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  min-height: 125px;
+  padding: 20px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.gis360-about-logo-grid a:hover,
+.gis360-about-logo-grid a:focus-visible {
+  border-color: var(--gis360-primary-blue);
+  box-shadow: 0 14px 35px rgba(43, 77, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+.gis360-about-logo-grid a:nth-child(6) {
+  background: #0b1f5e;
+  border-color: #0b1f5e;
+}
+
+.gis360-about-logo-grid img {
+  filter: none;
+  height: auto;
+  max-height: 58px;
+  max-width: 150px;
+  object-fit: contain;
+  opacity: 1;
+  transition: filter 0.25s ease, opacity 0.25s ease;
+  width: 100%;
+}
+
+.gis360-about-logo-grid a:hover img,
+.gis360-about-logo-grid a:focus-visible img {
+  filter: none;
+  opacity: 1;
+}
+
+.gis360-about-logo-grid a:last-child img {
+  max-height: 72px;
+  max-width: 90px;
+}
+
+.gis360-about-cta {
+  background:
+    radial-gradient(circle at 85% 30%, rgba(253, 89, 0, 0.22), transparent 26%),
+    linear-gradient(135deg, #071b5a 0%, #12389e 100%);
+  padding: clamp(70px, 7vw, 95px) 0;
+}
+
+.gis360-about-cta h2 {
+  font-size: clamp(38px, 4vw, 56px);
+  letter-spacing: -2px;
+  margin-bottom: 18px;
+}
+
+.gis360-about-cta p {
+  font-size: 17px;
+  margin: 0;
+  max-width: 850px;
+}
+
+.gis360-about-cta .btn i {
+  margin-left: 8px;
+}
+
+@media (max-width: 1199px) {
+  .gis360-capability-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gis360-about-process {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gis360-about-process::before {
+    display: none;
+  }
+
+  .gis360-about-logo-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 991px) {
+  .gis360-about-principles,
+  .gis360-capability-grid {
+    margin-left: 0;
+    margin-top: 45px;
+  }
+
+  .gis360-about-global__visual {
+    margin-bottom: 38px;
+  }
+
+  .gis360-about-commitment__inner {
+    gap: 32px;
+    grid-template-columns: 1fr;
+  }
+
+  .gis360-about-cta .text-lg-end {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .gis360-about-process,
+  .gis360-about-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gis360-about-process__step,
+  .gis360-about-reason,
+  .gis360-about-service-model {
+    min-height: 0;
+  }
+
+  .gis360-about-logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575px) {
+  .gis360-about-hero h1,
+  .gis360-about-heading {
+    letter-spacing: -1.5px !important;
+  }
+
+  .gis360-about-principles {
+    padding: 12px;
+  }
+
+  .gis360-about-principle {
+    font-size: 16px;
+    min-height: 78px;
+    padding: 18px;
+  }
+
+  .gis360-capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gis360-capability-item {
+    min-height: 135px;
+  }
+
+  .gis360-about-global__visual {
+    height: 310px;
+  }
+
+  .gis360-about-global__visual > i {
+    font-size: 120px;
+  }
+
+  .gis360-about-global__orbit {
+    height: 225px;
+    width: 225px;
+  }
+
+  .gis360-about-global__orbit--two {
+    height: 280px;
+    width: 280px;
+  }
+
+  .gis360-about-reason {
+    flex-direction: column;
+  }
+
+  .gis360-about-logo-grid a {
+    min-height: 105px;
+    padding: 16px;
+  }
+}
+
+.gis360-footer-social {
+  margin-top: 30px;
+}
+
+.gis360-footer--charcoal-preview .gis360-footer-social {
+  display: block;
+}
+
+.gis360-footer-social h5 {
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.gis360-footer-social ul {
+  align-items: center;
+  display: flex;
+  gap: 17px;
+  margin: 0;
+}
+
+.gis360-footer-social li {
+  margin: 0 !important;
+}
+
+.gis360-footer-social a,
+.gis360-footer-social button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: #ffffff !important;
+  display: inline-flex;
+  font-size: 21px;
+  height: 28px;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  width: 28px;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gis360-footer-social a i,
+.gis360-footer-social button i {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gis360-footer-social a:hover,
+.gis360-footer-social button:hover {
+  color: var(--gis360-orange) !important;
+  opacity: 1;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.gis360-footer-social a:hover i,
+.gis360-footer-social button:hover i {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+/* Restore the template's light text on dark hover and active treatments. */
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  .services-area .services-items .item.gis360-service-card:hover
+  :where(h1, h2, h3, h4, h5, h6, p, a, li, span, strong),
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  .services-area .services-items .item.gis360-service-card:focus-within
+  :where(h1, h2, h3, h4, h5, h6, p, a, li, span, strong),
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  .service-area .service-box .item:hover
+  :where(h1, h2, h3, h4, h5, h6, p, a, li, span, strong),
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  .features-area .item-grid .item:hover
+  :where(h1, h2, h3, h4, h5, h6, p, a, li, span, strong) {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  :where(.btn, .btn-standard, button):hover,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  :where(.btn, .btn-standard, button):focus-visible,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  :where(.btn, .btn-standard, button):hover :where(span, strong),
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  :where(.btn, .btn-standard, button):focus-visible :where(span, strong),
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  .services-details-area .sidebar-item.link li a:hover,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  .services-details-area .sidebar-item.link li a.active {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  nav.navbar.validnavs ul.nav > li.active > a,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  nav.navbar.validnavs ul.nav > li > a:hover,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  nav.navbar.validnavs ul.nav li.dropdown ul.dropdown-menu > li > a:hover {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+.gis360-global-coverage {
+  background: #fff;
+  overflow: hidden;
+}
+
+.gis360-global-coverage--services {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(253, 89, 0, 0.1), transparent 30%),
+    radial-gradient(circle at 88% 82%, rgba(40, 0, 123, 0.07), transparent 34%),
+    linear-gradient(135deg, #faf7f2 0%, #eee7de 100%);
+  border-bottom: 1px solid rgba(74, 58, 46, 0.12);
+  border-top: 1px solid rgba(74, 58, 46, 0.12);
+}
+
+.gis360-global-coverage-heading {
+  margin: 0 auto;
+  max-width: 1050px;
+}
+
+.gis360-global-coverage-heading h2 {
+  font-size: clamp(42px, 5vw, 72px);
+  font-weight: 800;
+  letter-spacing: -2.5px;
+  line-height: 1.05;
+  margin-bottom: 38px;
+}
+
+.gis360-display-heading {
+  font-size: clamp(42px, 5vw, 72px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -2.5px !important;
+  line-height: 1.05 !important;
+}
+
+body:not(#gis360-color-exception) .gis360-display-heading .gis360-display-accent {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+body:not(#gis360-color-exception) .gis360-display-heading .gis360-display-blue {
+  color: var(--gis360-primary-blue) !important;
+  -webkit-text-fill-color: var(--gis360-primary-blue) !important;
+}
+
+body:not(#gis360-color-exception) .gis360-global-coverage-heading .gis360-coverage-accent {
+  color: var(--gis360-orange) !important;
+  -webkit-text-fill-color: var(--gis360-orange) !important;
+}
+
+body:not(#gis360-color-exception) .gis360-global-coverage-heading .gis360-coverage-blue {
+  color: var(--gis360-primary-blue) !important;
+  -webkit-text-fill-color: var(--gis360-primary-blue) !important;
+}
+
+.gis360-global-coverage-heading p {
+  font-size: clamp(17px, 1.45vw, 22px);
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.gis360-coverage-layout {
+  margin-top: clamp(55px, 7vw, 95px);
+  row-gap: 50px;
+}
+
+.gis360-coverage-map-card {
+  align-items: center;
+  aspect-ratio: 4 / 3;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 24px 65px rgba(4, 13, 67, 0.12);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: clamp(24px, 4vw, 55px);
+  position: relative;
+}
+
+.gis360-coverage-map-card > img {
+  filter: brightness(0) saturate(100%) invert(31%) sepia(91%) saturate(4804%) hue-rotate(229deg) brightness(102%) contrast(104%) drop-shadow(0 0 0 #2b4dff) drop-shadow(0 0 0 #2b4dff) drop-shadow(0 0 0 #2b4dff);
+  height: auto;
+  opacity: 1;
+  width: 100%;
+}
+
+.gis360-map-marker {
+  left: var(--marker-x);
+  position: absolute;
+  top: var(--marker-y);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.gis360-map-marker > i {
+  background: var(--gis360-orange);
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(253, 89, 0, 0.38);
+  display: block;
+  height: 22px;
+  position: relative;
+  width: 22px;
+}
+
+.gis360-map-marker > i::before,
+.gis360-map-marker > i::after {
+  border: 2px solid rgba(253, 89, 0, 0.72);
+  border-radius: 50%;
+  content: "";
+  inset: -13px;
+  opacity: 0;
+  position: absolute;
+  animation: gis360CoveragePulse 2.25s ease-out infinite;
+  animation-delay: var(--marker-delay);
+}
+
+.gis360-map-marker > i::after {
+  animation-delay: calc(var(--marker-delay) + 0.75s);
+}
+
+.gis360-map-marker > span {
+  background: #050505;
+  border-radius: 5px;
+  bottom: 31px;
+  box-shadow: 0 8px 18px rgba(4, 13, 67, 0.18);
+  font-size: 12px;
+  font-weight: 700;
+  left: 50%;
+  line-height: 1;
+  padding: 9px 11px;
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+body:not(#gis360-color-exception) .gis360-map-marker > span {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.gis360-coverage-progress {
+  padding-left: clamp(10px, 4vw, 55px);
+}
+
+.gis360-coverage-row + .gis360-coverage-row {
+  margin-top: 34px;
+}
+
+.gis360-coverage-row-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.gis360-coverage-row-heading strong {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.gis360-coverage-row-heading span {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.gis360-coverage-track {
+  background: #e4ebff;
+  border-radius: 999px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.gis360-coverage-fill {
+  animation: gis360CoverageGrow 6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both,
+             gis360CoverageBlueFlow 10s ease-in-out infinite alternate;
+  background-color: var(--gis360-primary-blue);
+  background-image: linear-gradient(90deg, #28007b 0%, #2b4dff 38%, #66c7ff 68%, #2b4dff 100%);
+  background-size: 220% 100%;
+  border-radius: inherit;
+  box-shadow: 0 5px 16px rgba(43, 77, 255, 0.3);
+  height: 100%;
+  transform-origin: left center;
+  width: var(--coverage-value);
+}
+
+@keyframes gis360CoverageGrow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes gis360CoverageBlueFlow {
+  from { background-position: 100% 0; }
+  to { background-position: 0 0; }
+}
+
+@keyframes gis360CoveragePulse {
+  0% { opacity: 0.85; transform: scale(0.45); }
+  75%, 100% { opacity: 0; transform: scale(1.65); }
+}
+
+@media (max-width: 991px) {
+  .services-area.gis360-services-page .services-items .item.gis360-service-card {
+    height: 690px;
+  }
+}
+
+@media (max-width: 991px) {
+  .top-bar-area.gis360-top-bar .row {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .top-bar-area.gis360-top-bar .gis360-top-bar-primary,
+  .top-bar-area.gis360-top-bar .gis360-top-bar-secondary {
+    flex: 0 0 auto;
+    margin-top: 0 !important;
+    width: auto;
+  }
+
+  .top-bar-area.gis360-top-bar .gis360-top-bar-primary ul {
+    text-align: left;
+  }
+
+  .top-bar-area.gis360-top-bar .gis360-top-bar-secondary ul {
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --gis360-top-bar-height: 40px;
+  }
+
+  .top-bar-area.gis360-top-bar .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .top-bar-area.gis360-top-bar li {
+    font-size: 12px;
+  }
+
+  .top-bar-area.gis360-top-bar .gis360-top-bar-location,
+  .top-bar-area.gis360-top-bar .social {
+    display: none;
+  }
+
+  .gis360-hero-network {
+    margin-top: 22px;
+    max-width: 440px;
+  }
+
+  .gis360-services-network-overlay {
+    justify-content: center;
+    padding: 12px 18px;
+  }
+
+  .gis360-services-network-overlay .gis360-hero-network {
+    aspect-ratio: auto;
+    height: auto;
+    margin: 0;
+    max-width: 300px;
+    width: 82vw;
+  }
+
+  .gis360-network-svg--desktop {
+    display: none;
+  }
+
+  .gis360-network-svg--mobile {
+    display: block;
+  }
+
+  .gis360-network-node-label--mobile {
+    font-size: 11px;
+    stroke-width: 3px;
+  }
+
+  .gis360-services-hero {
+    height: clamp(380px, 60vh, 560px);
+  }
+
+  .gis360-services-hero > img {
+    object-fit: cover;
+    object-position: 62% center;
+  }
+
+  .services-area.gis360-services-page .services-items .item.gis360-service-card {
+    height: auto;
+    min-height: 0;
+  }
+}
+
+.services-area.gis360-home-services .services-items .item.gis360-service-card h4 a,
+.services-area.gis360-home-services .services-items .item.gis360-service-card p {
+  color: #000;
+}
+
+.services-area.gis360-home-services .services-items .item.gis360-service-card .info > a.btn-standard {
+  align-self: center;
+}
+
+.services-area .services-items .item.gis360-service-card .info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.services-area .services-items .item.gis360-service-card .gis360-service-points {
+  margin-bottom: 24px;
+}
+
+.services-area .services-items .item.gis360-service-card .info > a.btn-standard {
+  align-self: flex-start;
+  background: var(--gis360-orange);
+  border-radius: 5px;
+  bottom: auto;
+  box-shadow: none;
+  color: var(--gis360-white);
+  display: inline-flex;
+  height: auto;
+  left: auto;
+  line-height: 1.2;
+  margin: auto 0 0;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  width: auto;
+}
+
+.services-area .services-items .item.gis360-service-card .info > a.btn-standard::after {
+  display: none;
+}
+
+.services-area .services-items .item.gis360-service-card .info > a.btn-standard i {
+  color: inherit;
+  margin-left: 9px;
+}
+
+.services-area .services-items .item.gis360-service-card:hover .info > a.btn-standard,
+.services-area .services-items .item.gis360-service-card:focus-within .info > a.btn-standard {
+  background: var(--gis360-orange) !important;
+  color: var(--gis360-white) !important;
+}
+
+.site-heading h2,
+.site-heading h2.title,
+.site-heading h1,
+.site-heading h1.title {
+  text-transform: none;
+}
+
+.site-heading h1 {
+  display: inline-block;
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  position: relative;
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.site-heading h1 span {
+  color: var(--color-primary);
+}
+
+.site-heading h1::before,
+.site-heading h1::after {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  position: absolute;
+}
+
+.site-heading h1::before {
+  background: var(--color-primary);
+  margin-left: -25px;
+  width: 40px;
+}
+
+.site-heading h1::after {
+  background: var(--gis360-orange);
+  margin-left: 20px;
+  width: 5px;
+}
+
+.site-heading.text-left h1::before {
+  left: 0;
+  margin-left: 0;
+}
+
+.site-heading.text-left h1::after {
+  left: 45px;
+  margin-left: 0;
+}
+
+.services-details-area .content h1 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.gis360-service-points,
+.gis360-check-list,
+.gis360-values-list,
+.gis360-contact-list,
+.gis360-footer-social {
+  list-style: none;
+  margin: 18px 0;
+  padding: 0;
+}
+
+.gis360-service-points li,
+.gis360-check-list li,
+.gis360-values-list li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  transition: color 0.35s ease;
+}
+
+.gis360-service-points li::before,
+.gis360-check-list li::before,
+.gis360-values-list li::before {
+  color: var(--gis360-orange);
+  content: "\2713";
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+}
+
+.gis360-capability-grid > div {
+  margin-bottom: 24px;
+}
+
+.gis360-capability-grid .gis360-content-card h4 {
+  color: var(--gis360-blue);
+}
+
+.gis360-feature-icon,
+.gis360-contact-panel > i,
+.gis360-office-card > i {
+  color: var(--gis360-orange);
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.gis360-service-hero {
+  background: var(--gis360-light);
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.gis360-service-hero img {
+  max-height: 500px;
+  width: 100%;
+}
+
+.gis360-service-hero img.gis360-service-cover-image {
+  display: block;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  padding: 0;
+  width: 100%;
+}
+
+.gis360-service-hero-cover {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.gis360-eyebrow {
+  color: var(--gis360-orange);
+}
+
+.gis360-service-cta {
+  border-left: 4px solid var(--gis360-orange);
+  height: auto;
+  margin-top: 35px;
+}
+
+.gis360-core-intro {
+  margin-bottom: 32px;
+}
+
+.gis360-core-capability-group,
+.gis360-core-section {
+  height: auto;
+  margin-top: 28px;
+}
+
+.gis360-core-capability-group h2,
+.gis360-core-section h2 {
+  color: var(--gis360-blue);
+  font-size: 28px;
+  line-height: 1.25;
+  margin-bottom: 18px;
+}
+
+.gis360-service-cta h2 {
+  font-size: 28px;
+}
+
+.gis360-core-list-title {
+  margin-top: 24px;
+}
+
+.gis360-core-capability-list {
+  display: grid;
+  gap: 4px 28px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gis360-process-flow {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.gis360-process-flow span {
+  background: var(--gis360-navy);
+  border-radius: 5px;
+  color: var(--gis360-white);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+.gis360-process-flow i {
+  color: var(--gis360-orange);
+}
+
+.gis360-contact-panel {
+  background: linear-gradient(145deg, var(--gis360-navy), var(--gis360-blue));
+  color: #fff;
+  text-align: center;
+}
+
+.gis360-contact-panel h2,
+.gis360-contact-panel a {
+  color: #fff;
+}
+
+.gis360-contact-panel h2 {
+  font-size: 24px;
+}
+
+.gis360-coverage {
+  padding: 15px 5px;
+}
+
+.gis360-coverage strong {
+  color: var(--gis360-orange);
+  display: block;
+  font-size: clamp(34px, 4vw, 56px);
+  line-height: 1;
+}
+
+.gis360-coverage span {
+  display: block;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.gis360-verification-note {
+  background: rgba(253, 89, 0, 0.08);
+  border-left: 3px solid var(--gis360-orange);
+  color: inherit;
+  font-size: 13px;
+  padding: 12px 16px;
+}
+
+.gis360-vendor-marquee-shell {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.gis360-vendor-marquee {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 18px 0;
+  position: relative;
+}
+
+.gis360-vendor-track {
+  animation: gis360VendorMarquee 48s linear infinite;
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.gis360-vendor-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 18px;
+  padding-right: 18px;
+}
+
+.gis360-vendor-marquee:hover .gis360-vendor-track,
+.gis360-vendor-marquee:focus .gis360-vendor-track,
+.gis360-vendor-marquee:focus-within .gis360-vendor-track {
+  animation-play-state: paused;
+}
+
+.gis360-vendor-logo {
+  align-items: center;
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(135deg, #28007b 0%, #2b4dff 48%, #66c7ff 72%, #2b4dff 100%) border-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(43, 77, 255, 0.34), 0 0 20px rgba(102, 199, 255, 0.18);
+  display: flex;
+  flex: 0 0 190px;
+  height: 105px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gis360-vendor-logo img {
+  max-height: 70px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@keyframes gis360VendorMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.gis360-news-cover {
+  background: var(--gis360-light);
+  max-height: 520px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.gis360-news-cover-large {
+  max-height: 680px;
+}
+
+.gis360-news-gallery {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 25px;
+}
+
+.gis360-news-gallery img {
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gis360-office-card {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.gis360-office-card a {
+  display: block;
+}
+
+.gis360-contact-list li {
+  align-items: flex-start;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.gis360-contact-list i {
+  color: var(--gis360-orange);
+  font-size: 24px;
+  width: 28px;
+}
+
+.gis360-contact-list strong,
+.gis360-contact-list span,
+.gis360-contact-list a {
+  display: block;
+}
+
+.gis360-jobs-table {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 35px rgba(4, 13, 67, 0.07);
+  overflow: hidden;
+}
+
+.gis360-job-row {
+  align-items: center;
+  border-bottom: 1px solid var(--gis360-border);
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 2fr 0.8fr 0.8fr 1fr 1.3fr;
+  padding: 20px 25px;
+}
+
+.gis360-job-head {
+  background: var(--gis360-navy);
+  color: #fff;
+  font-weight: 700;
+}
+
+.gis360-status-closed {
+  color: #b42318;
+  font-weight: 700;
+}
+
+.gis360-job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-bottom: 30px;
+}
+
+.gis360-job-meta i {
+  color: var(--gis360-orange);
+}
+
+.gis360-footer-social {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.gis360-footer-social a {
+  color: var(--gis360-blue);
+}
+
+/* Careers */
+.gis360-careers-page { background: #fff; overflow: hidden; }
+.gis360-careers-hero { background: radial-gradient(circle at 78% 40%, rgba(55, 94, 255, .34), transparent 25%), linear-gradient(125deg, #061246 0%, #0b226e 58%, #2449dc 100%); min-height: 600px; overflow: hidden; padding: clamp(85px, 9vw, 125px) 0; position: relative; }
+.gis360-careers-hero__pattern { background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 50px 50px; inset: 0; mask-image: linear-gradient(90deg, transparent 5%, #000 55%, #000); position: absolute; }
+.gis360-careers-hero .container { position: relative; z-index: 1; }
+.gis360-careers-hero .gis360-section-label, .gis360-careers-heading .gis360-section-label, .gis360-careers-cta .gis360-section-label, .gis360-job-apply .gis360-section-label { color: var(--gis360-orange) !important; display: block; font-size: 14px; font-weight: 800; letter-spacing: .13em; margin-bottom: 18px; text-transform: uppercase; }
+.gis360-careers-hero h1 { color: #ff7731 !important; font-size: clamp(48px, 5.4vw, 76px); font-weight: 800; letter-spacing: -.045em; line-height: 1.02; margin: 0 0 26px; }
+.gis360-careers-hero h1 span { color: #fff !important; display: block; }
+.gis360-careers-hero__content > p { color: rgba(255,255,255,.82) !important; font-size: 18px; line-height: 1.75; margin: 0 0 34px; max-width: 690px; }
+.gis360-careers-hero__visual { height: 390px; margin: 0 auto; max-width: 440px; position: relative; }
+.gis360-careers-core, .gis360-careers-node { align-items: center; border: 1px solid rgba(255,255,255,.25); box-shadow: 0 15px 45px rgba(0,0,0,.2); display: flex; justify-content: center; position: absolute; z-index: 2; }
+.gis360-careers-core { background: rgba(255,255,255,.96); border-radius: 26px; flex-direction: column; height: 170px; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 190px; }
+.gis360-careers-core i { color: var(--gis360-orange) !important; font-size: 39px; margin-bottom: 10px; }
+.gis360-careers-core strong { color: var(--gis360-blue) !important; font-size: 24px; }
+.gis360-careers-core span { color: #626b83 !important; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.gis360-careers-orbit { border: 1px solid rgba(255,255,255,.19); border-radius: 50%; left: 50%; position: absolute; top: 50%; transform: translate(-50%,-50%); }
+.gis360-careers-orbit--one { height: 270px; width: 270px; }
+.gis360-careers-orbit--two { height: 380px; width: 380px; }
+.gis360-careers-node { background: linear-gradient(145deg, #3157ff, #132e9a); border-radius: 18px; height: 72px; width: 72px; }
+.gis360-careers-node i { color: #fff !important; font-size: 25px; }
+.gis360-careers-node--support { left: 20px; top: 56px; }
+.gis360-careers-node--network { right: 13px; top: 82px; }
+.gis360-careers-node--field { bottom: 36px; left: 56px; }
+.gis360-careers-node--cloud { bottom: 23px; right: 55px; }
+.gis360-careers-node::after { animation: gis360-career-pulse 2.2s ease-out infinite; border: 1px solid rgba(255,122,50,.65); border-radius: inherit; content: ""; inset: -1px; position: absolute; }
+@keyframes gis360-career-pulse { 0% { opacity: .8; transform: scale(1); } 70%,100% { opacity: 0; transform: scale(1.35); } }
+.gis360-careers-values { background: #fff; margin-top: -45px; position: relative; z-index: 2; }
+.gis360-careers-value { align-items: center; background: #fff; border: 1px solid #e1e7f1; border-radius: 18px; box-shadow: 0 18px 50px rgba(9,28,86,.1); display: flex; gap: 17px; height: 100%; padding: 25px; }
+.gis360-careers-value > i { align-items: center; background: #edf1ff; border-radius: 14px; color: var(--gis360-blue) !important; display: flex; flex: 0 0 58px; font-size: 23px; height: 58px; justify-content: center; }
+.gis360-careers-value h3 { color: #101a3c !important; font-size: 18px; margin: 0 0 5px; }
+.gis360-careers-value p { color: #626a7d !important; font-size: 13px; line-height: 1.55; margin: 0; }
+.gis360-careers-openings { background: linear-gradient(180deg,#fff 0%,#f5f7fc 100%); }
+.gis360-careers-heading { margin: 0 auto 50px; max-width: 780px; }
+.gis360-careers-heading h2, .gis360-careers-cta h2 { color: var(--gis360-orange) !important; font-size: clamp(42px,4.5vw,60px); font-weight: 800; letter-spacing: -.04em; line-height: 1.05; margin: 0 0 18px; }
+.gis360-careers-heading h2 span, .gis360-careers-cta h2 span { color: var(--gis360-blue) !important; }
+.gis360-careers-heading p { color: #424b61 !important; font-size: 17px; line-height: 1.7; margin: 0; }
+.gis360-careers-grid > div { display: flex; }
+.gis360-career-card { background: #fff; border: 1px solid #e0e6f1; border-radius: 20px; box-shadow: 0 12px 38px rgba(10,28,79,.06); display: flex; flex-direction: column; height: 100%; overflow: hidden; padding: 30px; position: relative; transition: .35s ease; width: 100%; }
+.gis360-career-card::before { background: linear-gradient(90deg,var(--gis360-blue),#4c77ff,var(--gis360-orange)); content: ""; height: 4px; inset: 0 0 auto; position: absolute; }
+.gis360-career-card:hover { border-color: rgba(42,73,239,.35); box-shadow: 0 22px 55px rgba(10,34,108,.13); transform: translateY(-7px); }
+.gis360-career-card__top { align-items: center; display: flex; justify-content: space-between; margin-bottom: 24px; }
+.gis360-career-card__icon { align-items: center; background: #edf1ff; border-radius: 14px; color: var(--gis360-blue) !important; display: flex; font-size: 25px; height: 58px; justify-content: center; width: 58px; }
+.gis360-career-card__icon i { color: inherit !important; }
+.gis360-career-status { align-items: center; background: #eaf8ef; border: 1px solid #c5ead2; border-radius: 50px; color: #16733c !important; display: inline-flex; font-size: 11px; font-weight: 800; gap: 7px; letter-spacing: .08em; padding: 7px 11px; text-transform: uppercase; }
+.gis360-career-status i { animation: gis360-status-pulse 1.8s ease infinite; background: #1b9c50; border-radius: 50%; height: 7px; width: 7px; }
+@keyframes gis360-status-pulse { 50% { box-shadow: 0 0 0 5px rgba(27,156,80,.13); } }
+.gis360-career-card__department { color: var(--gis360-orange) !important; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.gis360-career-card h3 { color: #101a3b !important; font-size: 24px; line-height: 1.25; margin: 8px 0 13px; }
+.gis360-career-card > p { color: #50586c !important; font-size: 14px; line-height: 1.7; margin: 0 0 22px; }
+.gis360-career-card__meta { border-top: 1px solid #e6eaf2; list-style: none; margin: auto 0 24px; padding: 20px 0 0; }
+.gis360-career-card__meta li { align-items: center; color: #303a54 !important; display: flex; font-size: 13px; gap: 9px; margin-bottom: 9px; }
+.gis360-career-card__meta i { color: var(--gis360-orange) !important; text-align: center; width: 15px; }
+.gis360-career-card__actions { align-items: center; display: flex; gap: 12px; justify-content: space-between; }
+.gis360-career-read-more { color: var(--gis360-blue) !important; font-size: 13px; font-weight: 800; }
+.gis360-career-read-more i { color: var(--gis360-orange) !important; margin-left: 5px; transition: .25s; }
+.gis360-career-read-more:hover { color: var(--gis360-orange) !important; }
+.gis360-career-read-more:hover i { transform: translateX(4px); }
+.gis360-career-card__actions .btn { border-radius: 8px; padding: 10px 18px; }
+.gis360-careers-cta { background: #f5f7fc; padding: 0 0 100px; }
+.gis360-careers-cta__inner { align-items: center; background: linear-gradient(125deg,#07164e,#17399d); border-radius: 24px; box-shadow: 0 24px 60px rgba(7,22,78,.18); display: flex; gap: 40px; justify-content: space-between; overflow: hidden; padding: clamp(34px,5vw,60px); position: relative; }
+.gis360-careers-cta__inner::after { border: 1px solid rgba(255,255,255,.13); border-radius: 50%; content: ""; height: 280px; position: absolute; right: -100px; top: -155px; width: 280px; }
+.gis360-careers-cta__inner > * { position: relative; z-index: 1; }
+.gis360-careers-cta h2 { color: #ff7731 !important; font-size: clamp(34px,4vw,50px); margin-bottom: 12px; }
+.gis360-careers-cta h2 span { color: #fff !important; }
+.gis360-careers-cta p { color: rgba(255,255,255,.75) !important; margin: 0; }
+.gis360-careers-cta .btn { flex: 0 0 auto; }
+
+/* Job detail */
+.gis360-job-detail__hero { background: linear-gradient(125deg,#07164d,#2449db); padding: 80px 0 90px; }
+.gis360-job-back { color: rgba(255,255,255,.78) !important; display: inline-block; font-size: 13px; font-weight: 700; margin-bottom: 38px; }
+.gis360-job-back:hover { color: var(--gis360-orange) !important; }
+.gis360-job-back i { margin-right: 7px; }
+.gis360-job-detail__heading { max-width: 900px; }
+.gis360-job-detail__heading h1 { color: #fff !important; font-size: clamp(42px,5vw,67px); letter-spacing: -.04em; margin: 18px 0; }
+.gis360-job-detail__heading > p { color: rgba(255,255,255,.78) !important; font-size: 18px; line-height: 1.7; }
+.gis360-job-detail__meta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.gis360-job-detail__meta span { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); border-radius: 9px; color: #fff !important; font-size: 13px; padding: 10px 13px; }
+.gis360-job-detail__meta i { color: var(--gis360-orange) !important; margin-right: 7px; }
+.gis360-job-detail__content { background: #f7f9fd; }
+.gis360-job-detail__article { background: #fff; border: 1px solid #e2e7f0; border-radius: 18px; padding: clamp(28px,4vw,48px); }
+.gis360-job-detail__article h2, .gis360-job-detail__article h3 { color: var(--gis360-blue) !important; }
+.gis360-job-detail__article h2 { font-size: 36px; }
+.gis360-job-detail__article h3 { border-top: 1px solid #e6eaf1; font-size: 25px; margin-top: 35px; padding-top: 30px; }
+.gis360-job-detail__article p, .gis360-job-detail__article li { color: #343d52 !important; }
+.gis360-job-apply { background: linear-gradient(145deg,#07164d,#17399d); border-radius: 18px; padding: 35px; position: sticky; top: 135px; }
+.gis360-job-apply h2 { color: #fff !important; font-size: 32px; }
+.gis360-job-apply p { color: rgba(255,255,255,.75) !important; line-height: 1.7; }
+.gis360-job-apply .btn { margin: 10px 0 22px; width: 100%; }
+.gis360-job-apply small { color: rgba(255,255,255,.65) !important; display: block; line-height: 1.55; }
+.gis360-job-apply small a { color: #fff !important; text-decoration: underline; }
+
+@media (max-width: 991px) {
+  .gis360-careers-hero { min-height: auto; }
+  .gis360-careers-hero__visual { margin-top: 10px; }
+  .gis360-careers-values { margin-top: 0; padding: 35px 0; }
+  .gis360-careers-cta__inner { align-items: flex-start; flex-direction: column; }
+  .gis360-job-apply { position: static; }
+}
+
+@media (max-width: 767px) {
+  .gis360-careers-hero { padding: 72px 0; }
+  .gis360-careers-hero h1 { font-size: 44px; }
+  .gis360-careers-hero__content > p { font-size: 16px; }
+  .gis360-careers-hero__visual { height: 310px; max-width: 340px; }
+  .gis360-careers-orbit--one { height: 220px; width: 220px; }
+  .gis360-careers-orbit--two { height: 300px; width: 300px; }
+  .gis360-careers-core { height: 145px; width: 165px; }
+  .gis360-careers-node { height: 58px; width: 58px; }
+  .gis360-careers-node--support { left: 10px; top: 35px; }
+  .gis360-careers-node--network { right: 5px; top: 60px; }
+  .gis360-careers-node--field { bottom: 28px; left: 40px; }
+  .gis360-careers-node--cloud { bottom: 15px; right: 42px; }
+  .gis360-careers-heading h2 { font-size: 42px; }
+  .gis360-career-card { padding: 26px 23px; }
+  .gis360-careers-cta { padding-bottom: 70px; }
+  .gis360-job-detail__hero { padding: 60px 0 70px; }
+}
+
+@media (max-width: 420px) {
+  .gis360-career-card__actions { align-items: stretch; flex-direction: column; }
+  .gis360-career-card__actions .btn { text-align: center; width: 100%; }
+  .gis360-career-read-more { padding: 8px 0; text-align: center; }
+}
+
+@media (max-width: 991px) {
+  .gis360-coverage-progress {
+    padding-left: 0;
+  }
+
+  .breadcrumb-area {
+    padding: 145px 0 70px;
+  }
+
+  .breadcrumb-area h2 {
+    margin: 0 0 25px;
+  }
+
+  .banner-style-five .content .bottom {
+    align-items: center;
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .banner-style-five .content .bottom a {
+    margin: 0 !important;
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .gis360-hero-line,
+  .gis360-hero-rotator {
+    white-space: normal;
+  }
+
+  .about-area .info > h5 {
+    display: block;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-area .info > h5::after {
+    display: none;
+  }
+
+  .gis360-vendor-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gis360-job-head {
+    display: none;
+  }
+
+  .gis360-job-row {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-delay: 0s !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+
+  #preloader {
+    display: none !important;
+  }
+
+  .wow {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  .gis360-hero-network *,
+  .gis360-coverage-fill,
+  .gis360-vendor-track,
+  .gis360-map-marker > i::before,
+  .gis360-map-marker > i::after {
+    animation: none !important;
+  }
+
+  .gis360-network-signal {
+    display: none;
+  }
+
+  .gis360-hero-rotator {
+    filter: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Final mobile containment: keep long hero copy and fixed consent UI inside the viewport. */
+@media (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .banner-area.gis360-home-full-image-hero,
+  .banner-area.gis360-home-full-image-hero > .item,
+  .banner-area.gis360-home-full-image-hero .container,
+  .banner-area.gis360-home-full-image-hero .row,
+  .banner-area.gis360-home-full-image-hero [class*="col-"],
+  .banner-area.gis360-home-full-image-hero .content,
+  .gis360-contact-hero .container,
+  .gis360-contact-hero__content {
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .banner-area .content h1.gis360-hero-heading,
+  .banner-area .content h2.gis360-hero-heading {
+    font-size: clamp(34px, 10.5vw, 48px);
+    letter-spacing: -1.5px;
+    max-width: 100%;
+  }
+
+  .gis360-hero-line,
+  .gis360-hero-rotator,
+  .gis360-contact-hero h1,
+  .gis360-contact-hero__content > p {
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .gis360-contact-hero h1 {
+    font-size: clamp(36px, 10.5vw, 50px);
+    letter-spacing: -0.035em;
+  }
+
+  .gis360-cookie-banner {
+    box-sizing: border-box;
+    left: 12px;
+    max-width: calc(100vw - 24px);
+    right: 12px;
+    transform: none;
+    width: auto;
+  }
+
+  .gis360-cookie-banner,
+  .gis360-cookie-banner__actions,
+  .gis360-cookie-banner__actions > * {
+    min-width: 0;
+  }
+}
+
+:where(a[href], button, input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 3px solid #ff5a00 !important;
+  outline-offset: 3px !important;
+}
+
+.gis360-skip-link {
+  background: #fff;
+  border: 3px solid var(--gis360-orange);
+  color: var(--gis360-navy) !important;
+  font-weight: 800;
+  left: 16px;
+  padding: 10px 16px;
+  position: fixed;
+  top: -100px;
+  z-index: 12000;
+}
+
+.gis360-skip-link:focus {
+  top: 12px;
+}
+
+.gis360-display-accent {
+  color: #ed5000 !important;
+  -webkit-text-fill-color: #ed5000 !important;
+}
+
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  nav.navbar.validnavs ul.nav > li.active > a,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  nav.navbar.validnavs ul.nav > li > a:hover,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  nav.navbar.validnavs ul.nav > li > a:focus-visible,
+body:not(#gis360-color-exception):not(#gis360-hover-exception)
+  nav.navbar.validnavs ul.nav li.dropdown ul.dropdown-menu > li > a:hover {
+  color: #c94700 !important;
+  -webkit-text-fill-color: #c94700 !important;
+}
+
+@media (max-width: 575px) {
+  .gis360-global-coverage-heading h2 {
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+  }
+
+  .gis360-coverage-layout {
+    margin-top: 42px;
+  }
+
+  .gis360-coverage-map-card {
+    border-radius: 18px;
+    padding: 18px;
+  }
+
+  .gis360-map-marker > span {
+    bottom: 23px;
+    font-size: 8px;
+    padding: 6px 7px;
+  }
+
+  .gis360-map-marker > i {
+    border-width: 3px;
+    height: 15px;
+    width: 15px;
+  }
+
+  .gis360-coverage-row + .gis360-coverage-row {
+    margin-top: 25px;
+  }
+
+  .gis360-core-capability-list {
+    grid-template-columns: 1fr;
+  }
+
+  .gis360-process-flow i {
+    transform: rotate(90deg);
+  }
+
+  .services-area .services-items .item.gis360-service-card {
+    padding: 34px 24px 26px;
+  }
+
+  .coverage-area .row > div:last-child:nth-child(odd) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gis360-vendor-grid,
+  .gis360-news-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gis360-vendor-logo {
+    height: 95px;
+    padding: 14px;
+  }
+}
